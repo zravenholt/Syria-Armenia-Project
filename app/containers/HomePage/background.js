@@ -9,6 +9,7 @@ const Background = styled.div`
   background-image: url(${img});
   background-size: 100%;
   filter: blur(5px);
+  z-index: 0;
 `;
 
 export default Background;

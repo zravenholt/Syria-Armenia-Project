@@ -14,16 +14,20 @@ import { FormattedMessage } from 'react-intl';
 import messages from './messages';
 import Background from './background';
 import Title from './Title';
+import Blurb from './Blurb';
 
 /* eslint-disable react/prefer-stateless-function */
 export default class HomePage extends React.PureComponent {
   render() {
     return (
-      <div padding-bottom="500px">
+      <div>
         <Background/>
         <Title>
           <FormattedMessage {...messages.header} />
         </Title>
+        <Blurb>
+          <FormattedMessage {...messages.blurb} />
+        </Blurb>
       </div>
     );
   }
