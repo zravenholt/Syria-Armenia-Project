@@ -10,13 +10,15 @@
  */
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { FormattedMessage } from 'react-intl';
 import messages from './messages';
 import Background from './background';
 import Title from './Title';
 import Blurb from './Blurb';
 import FeaturedVideo from './FeaturedVideo';
-import Separator from './Separator';
+import Separator from './separator';
+import VideoPanel from './VideoPanel';
 
 /* eslint-disable react/prefer-stateless-function */
 export default class HomePage extends React.PureComponent {
@@ -24,18 +26,36 @@ export default class HomePage extends React.PureComponent {
     return (
       <div>
         <div>
-          <Background/>
+          <Background />
         </div>
         <div>
           <Title>
             <FormattedMessage {...messages.header} />
           </Title>
+          <Link href="/about" to="/about">
+            Click here for about
+          </Link>
           <Blurb>
             <FormattedMessage {...messages.blurb} />
           </Blurb>
-          <Separator/>
+          <Separator />
           <FeaturedVideo>
             <FormattedMessage {...messages.video} />
+            <VideoPanel
+              src="https://www.youtube.com/embed/xO8Cz-9qKTI"
+              allowFullScreen="true"
+            />
+            {/* <iframe
+              display="block"
+              margin="auto"
+              title="cats"
+              width="650"
+              height="400"
+              src="https://www.youtube.com/embed/DXRkXmEK44U"
+              frameBorder="0"
+              allow="autoplay; encrypted-media"
+              allowFullScreen
+            /> */}
           </FeaturedVideo>
         </div>
       </div>

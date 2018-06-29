@@ -4,7 +4,9 @@ const FeaturedVideo = styled.div`
   position: relative;
   background: white; /* For browsers that don't support gradients */
   width: 100%;
-  height: 500px;
+  height: 100px;
+  padding-top: 50px;
+  padding-bottom: 1000px;
   text-align: center;
   font-size: 60px;
   font-family: serif;

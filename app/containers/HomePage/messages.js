@@ -15,7 +15,7 @@ export default defineMessages({
     defaultMessage: 'Hear their stories, see their struggles',
   },
   video: {
-    id: 'app.components.HomePage.blurb',
+    id: 'app.components.HomePage.video',
     defaultMessage: 'Featured Video',
   },
 });
