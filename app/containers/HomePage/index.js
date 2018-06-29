@@ -12,14 +12,19 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
 import messages from './messages';
+import Background from './background';
+import Title from './Title';
 
 /* eslint-disable react/prefer-stateless-function */
 export default class HomePage extends React.PureComponent {
   render() {
     return (
-      <h1>
-        <FormattedMessage {...messages.header} />
-      </h1>
+      <div padding-bottom="500px">
+        <Background/>
+        <Title>
+          <FormattedMessage {...messages.header} />
+        </Title>
+      </div>
     );
   }
 }
