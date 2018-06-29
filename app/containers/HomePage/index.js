@@ -15,19 +15,29 @@ import messages from './messages';
 import Background from './background';
 import Title from './Title';
 import Blurb from './Blurb';
+import FeaturedVideo from './FeaturedVideo';
+import Separator from './Separator';
 
 /* eslint-disable react/prefer-stateless-function */
 export default class HomePage extends React.PureComponent {
   render() {
     return (
       <div>
-        <Background/>
-        <Title>
-          <FormattedMessage {...messages.header} />
-        </Title>
-        <Blurb>
-          <FormattedMessage {...messages.blurb} />
-        </Blurb>
+        <div>
+          <Background/>
+        </div>
+        <div>
+          <Title>
+            <FormattedMessage {...messages.header} />
+          </Title>
+          <Blurb>
+            <FormattedMessage {...messages.blurb} />
+          </Blurb>
+          <Separator/>
+          <FeaturedVideo>
+            <FormattedMessage {...messages.video} />
+          </FeaturedVideo>
+        </div>
       </div>
     );
   }

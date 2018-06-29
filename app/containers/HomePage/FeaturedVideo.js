@@ -1,12 +1,10 @@
 import styled from 'styled-components';
 
-const Blurb = styled.div`
+const FeaturedVideo = styled.div`
   position: relative;
-  display: block;
-  margin: auto;
-  padding-bottom: 25%;
+  background: white; /* For browsers that don't support gradients */
   width: 100%;
-  color: white;
+  height: 500px;
   text-align: center;
   font-size: 60px;
   font-family: serif;
@@ -14,4 +12,4 @@ const Blurb = styled.div`
   z-index: 1;
 `;
 
-export default Blurb;
+export default FeaturedVideo;

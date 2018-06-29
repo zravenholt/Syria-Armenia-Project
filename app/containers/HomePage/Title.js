@@ -1,11 +1,12 @@
 import styled from 'styled-components';
 
 const Title = styled.div`
-  position: absolute;
+  position: relative;
+  display: block;
   margin: auto;
-  margin-top: 10%;
+  padding-top: 10%;
   width: 100%;
-  color: #303030;
+  color: white;
   text-align: center;
   font-size: 90px;
   font-family: cursive;
