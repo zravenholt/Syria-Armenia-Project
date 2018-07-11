@@ -10,7 +10,6 @@
  */
 
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { FormattedMessage } from 'react-intl';
 import messages from './messages';
 import Background from './background';
@@ -18,6 +17,7 @@ import Title from './Title';
 import Blurb from './Blurb';
 import FeaturedVideo from './FeaturedVideo';
 import Separator from './separator';
+import Link from './Link';
 import VideoPanel from './VideoPanel';
 
 /* eslint-disable react/prefer-stateless-function */
@@ -29,12 +29,18 @@ export default class HomePage extends React.PureComponent {
           <Background />
         </div>
         <div>
+          <Link href="/archives" to="/archives">
+            Video Archives
+          </Link>
+          <Link href="/people" to="/people">
+            Refugees
+          </Link>
+          <Link href="/about" to="/about">
+            About Us
+          </Link>
           <Title>
             <FormattedMessage {...messages.header} />
           </Title>
-          <Link href="/about" to="/about">
-            Click here for about
-          </Link>
           <Blurb>
             <FormattedMessage {...messages.blurb} />
           </Blurb>
