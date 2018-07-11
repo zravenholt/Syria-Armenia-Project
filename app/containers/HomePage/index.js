@@ -51,17 +51,6 @@ export default class HomePage extends React.PureComponent {
               src="https://www.youtube.com/embed/xO8Cz-9qKTI"
               allowFullScreen="true"
             />
-            {/* <iframe
-              display="block"
-              margin="auto"
-              title="cats"
-              width="650"
-              height="400"
-              src="https://www.youtube.com/embed/DXRkXmEK44U"
-              frameBorder="0"
-              allow="autoplay; encrypted-media"
-              allowFullScreen
-            /> */}
           </FeaturedVideo>
         </div>
       </div>
