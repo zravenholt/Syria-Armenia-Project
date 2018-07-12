@@ -5,15 +5,15 @@ const Link = styled.a`
   display: block-inline;
   float: left;
   margin-top: 10px;
-  margin-left: 18%;
-  color: #e5e5e5;
+  margin-left: 19%;
+  color: #6d6d6d;
   text-decoration: none;
   text-align: center;
   font-size: 30px;
   font-family: serif;
   z-index: 2;
   &:hover {
-    color: white;
+    color: #3d3d3d;
   }
 `;
 

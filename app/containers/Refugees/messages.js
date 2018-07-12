@@ -8,7 +8,7 @@ import { defineMessages } from 'react-intl';
 export default defineMessages({
   header: {
     id: 'app.components.Refugees.header',
-    defaultMessage: 'Refugee page dopeness',
+    defaultMessage: 'Testimonials',
   },
   blurb: {
     id: 'app.components.Refugees.blurb',
