@@ -10,6 +10,9 @@ import LeftTile from './LeftTile';
 import RightTile from './RightTile';
 import TileRow from './TileRow';
 import CircleProfile from './CircleProfile';
+// import ProfileImage from './ProfileImage';
+
+import img from '../../images/man.jpg';
 
 /* eslint-disable react/prefer-stateless-function */
 export default class Refugees extends React.PureComponent {
@@ -34,7 +37,9 @@ export default class Refugees extends React.PureComponent {
           </Header>
           <TileRow>
             <LeftTile>
-              <CircleProfile src="../../images/man.jpg" />
+              <CircleProfile src={img}>
+                {/* <ProfileImage src={img} alt="picture here" /> */}
+              </CircleProfile>
               <FormattedMessage {...messages.header} />
             </LeftTile>
             <Tile>
