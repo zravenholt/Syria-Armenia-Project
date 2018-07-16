@@ -4,6 +4,7 @@ const CircleProfile = styled.img`
   display: block;
   margin: auto;
   margin-top: 10%;
+  margin-bottom: 10%;
   width: 200px;
   height: 200px;
   max-width: 100%;

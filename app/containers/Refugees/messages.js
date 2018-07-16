@@ -10,6 +10,22 @@ export default defineMessages({
     id: 'app.components.Refugees.header',
     defaultMessage: 'Testimonials',
   },
+  one: {
+    id: 'app.components.Refugees.one',
+    defaultMessage: 'Chris Pine',
+  },
+  two: {
+    id: 'app.components.Refugees.two',
+    defaultMessage: 'Olivia Wilde',
+  },
+  three: {
+    id: 'app.components.Refugees.three',
+    defaultMessage: 'Testimonials',
+  },
+  four: {
+    id: 'app.components.Refugees.four',
+    defaultMessage: 'Testimonials',
+  },
   blurb: {
     id: 'app.components.Refugees.blurb',
     defaultMessage: 'Hear their stories, see their struggles',
