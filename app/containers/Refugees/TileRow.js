@@ -1,0 +1,22 @@
+import styled from 'styled-components';
+
+const TileRow = styled.div`
+  position: relative;
+  display: block-inline;
+  float: left;
+  margin-bottom: 50px;
+  margin-top: 25px;
+  height: 350px;
+  width: 100%;
+  text-decoration: none;
+  text-align: center;
+  font-size: 30px;
+  font-family: serif;
+  border-radius: 10px;
+  z-index: 2;
+  &:hover {
+    color: #3d3d3d;
+  }
+`;
+
+export default TileRow;
