@@ -4,7 +4,7 @@ const Name = styled.div`
   position: relative;
   display: block;
   margin: auto;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   width: 100%;
   color: black;
   text-align: center;
