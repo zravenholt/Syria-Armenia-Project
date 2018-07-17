@@ -6,7 +6,6 @@ const ModalWrapper = styled.div`
   width: 100%;
   height: 100vh;
   z-index: 3;
-  scroll: no;
 `;
 
 export default ModalWrapper;
