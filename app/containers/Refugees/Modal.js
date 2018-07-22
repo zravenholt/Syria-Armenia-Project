@@ -1,5 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+// import ReactPlayer from 'react-player';
+
 import BigCircleProfile from './BigCircleProfile';
 import ModalWrapper from './ModalWrapper';
 import ProfileContainer from './ProfileContainer';
@@ -24,6 +26,10 @@ class Modal extends React.PureComponent {
               src="https://www.youtube.com/embed/xO8Cz-9qKTI"
               allowFullScreen="true"
             />
+            {/* <ReactPlayer
+              src="https://www.youtube.com/watch?v=oUFJJNQGwhk"
+              playing="true"
+            /> */}
           </ProfileContainer>
         </ModalWrapper>
       </div>
