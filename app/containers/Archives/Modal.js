@@ -18,6 +18,7 @@ import Date from './Date';
 import Location from './Location';
 import Interviewer from './Interviewer';
 import Translator from './Translator';
+import CloseButton from './CloseButton';
 
 class Modal extends React.PureComponent {
   render() {
@@ -27,8 +28,9 @@ class Modal extends React.PureComponent {
 
     return (
       <div>
-        <ModalWrapper onClick={this.props.onClose}>
+        <ModalWrapper>
           <ModalContainer>
+            <CloseButton onClick={this.props.onClose}>X</CloseButton>
             <TextWrapper>
               <Name>Interview of {this.props.video.name}</Name>
               <Location>Location: {this.props.video.location}</Location>

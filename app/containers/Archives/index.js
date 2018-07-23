@@ -36,7 +36,7 @@ export default class Archives extends React.PureComponent {
       selectedVideo: null,
       VideoList: [
         {
-          videoName: 'example1',
+          videoName: 'Video of Angel Ajemian',
           url: video,
           script: track,
           name: 'Angel Ajemian',
