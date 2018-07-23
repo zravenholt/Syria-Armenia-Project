@@ -7,7 +7,7 @@ const Header = styled.div`
   padding-top: 10%;
   margin-bottom: 5%;
   width: 100%;
-  color: black;
+  color: white;
   text-align: center;
   font-size: 90px;
   font-family: cursive;

@@ -26,6 +26,7 @@ import Header from './Header';
 import ListWrapper from './ListWrapper';
 import VideoTitle from './VideoTitle';
 import Modal from './Modal';
+import Background from './Background';
 
 /* eslint-disable react/prefer-stateless-function */
 export default class Archives extends React.PureComponent {
@@ -115,41 +116,46 @@ export default class Archives extends React.PureComponent {
     return (
       <div>
         <div>
+          <Background />
+        </div>
+        <div>
           <Modal
             show={this.state.isOpen}
             onClose={this.toggleModal}
             video={this.state.selectedVideo}
           />
         </div>
-        <Link href="/people" to="/people">
-          Refugees
-        </Link>
-        <Link href="/" to="/">
-          Home
-        </Link>
-        <Link href="/about" to="/about">
-          About Us
-        </Link>
-        <Header>
-          <FormattedMessage {...messages.header} />
-        </Header>
-        <ListWrapper>
-          <ul>
-            {this.state.VideoList.map((vidObj, index) => {
-              const val = index + 1;
-              return (
-                <VideoTitle
-                  key={val}
-                  onClick={() => {
-                    this.toggleModal(vidObj, index);
-                  }}
-                >
-                  {vidObj.videoName}
-                </VideoTitle>
-              );
-            })}
-          </ul>
-        </ListWrapper>
+        <div>
+          <Link href="/people" to="/people">
+            Refugees
+          </Link>
+          <Link href="/" to="/">
+            Home
+          </Link>
+          <Link href="/about" to="/about">
+            About Us
+          </Link>
+          <Header>
+            <FormattedMessage {...messages.header} />
+          </Header>
+          <ListWrapper>
+            <ul>
+              {this.state.VideoList.map((vidObj, index) => {
+                const val = index + 1;
+                return (
+                  <VideoTitle
+                    key={val}
+                    onClick={() => {
+                      this.toggleModal(vidObj, index);
+                    }}
+                  >
+                    {vidObj.name} - {vidObj.location} - {vidObj.date}
+                  </VideoTitle>
+                );
+              })}
+            </ul>
+          </ListWrapper>
+        </div>
       </div>
     );
   }
