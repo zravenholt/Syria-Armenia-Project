@@ -1,12 +1,9 @@
 import styled from 'styled-components';
 
 const Tile = styled.div`
-  position: relative;
-  display: block-inline;
-  float: left;
   background-color: white;
-  margin-right: 4%;
   height: 350px;
+  margin: 20px;
   width: 300px;
   text-decoration: none;
   text-align: center;

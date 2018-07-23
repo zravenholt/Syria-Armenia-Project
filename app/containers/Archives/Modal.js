@@ -44,7 +44,7 @@ class Modal extends React.PureComponent {
               {/* eslint-disable */}
               <video
                 src={this.props.video.url}
-                width="680px"
+                width="100%"
                 display="block"
                 margin="auto"
                 margin-top="25px"

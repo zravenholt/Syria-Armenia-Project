@@ -8,8 +8,6 @@ import Header from './Header';
 import Link from './Link';
 import Background from './background';
 import Tile from './Tile';
-import LeftTile from './LeftTile';
-import RightTile from './RightTile';
 import TileRow from './TileRow';
 import CircleProfile from './CircleProfile';
 import Modal from './Modal';
@@ -31,9 +29,59 @@ export default class Refugees extends React.PureComponent {
           name: 'Olivia Wilde',
           img: img2,
         },
+        {
+          name: 'AAA',
+          img: image,
+        },
+        {
+          name: 'BBB',
+          img: img2,
+        },
+        {
+          name: 'CCC',
+          img: image,
+        },
+        {
+          name: 'Olivia Wilde',
+          img: img2,
+        },
+        {
+          name: 'DDD',
+          img: image,
+        },
+        {
+          name: 'EEE',
+          img: img2,
+        },
+        {
+          name: 'FFF',
+          img: image,
+        },
+        {
+          name: 'GGG',
+          img: img2,
+        },
+        {
+          name: 'Chris Pine',
+          img: image,
+        },
+        {
+          name: 'Olivia Wilde',
+          img: img2,
+        },
+        {
+          name: 'Chris Pine',
+          img: image,
+        },
+        {
+          name: 'Olivia Wilde',
+          img: img2,
+        },
       ],
       isOpen: false,
     };
+
+    this.toggleModal = this.toggleModal.bind(this);
   }
 
   toggleModal = () => {
@@ -41,6 +89,60 @@ export default class Refugees extends React.PureComponent {
       isOpen: !this.state.isOpen,
     });
   };
+
+  createTiles = () => {
+    const tiles = [];
+    for (let i = 0; i < 4; i += 1) {
+      tiles.push(
+        <Tile onClick={this.toggleModal}>
+          <CircleProfile src={this.state.people[i].img}>
+            {/* <ProfileImage src={img} alt="picture here" /> */}
+          </CircleProfile>
+          {this.state.people[i].name}
+        </Tile>,
+      );
+    }
+    return (
+      <div>
+        <TileRow>{tiles}</TileRow>
+      </div>
+    );
+  };
+
+  // createRows = () => {
+  //   const persons = this.state.people;
+  //   const toggleFunc = this.toggle;
+  //   let person = 0;
+  //   function createTiles() {
+  //     const tiles = [];
+  //     for (let i = 0; i < 4; i += 1) {
+  //       if (persons[person + i]) {
+  //         tiles.push(
+  //           <Tile onClick={toggleFunc}>
+  //             <CircleProfile src={persons[person + i].img}>
+  //               {/* <ProfileImage src={img} alt="picture here" /> */}
+  //             </CircleProfile>
+  //             {this.state.people[i].name}
+  //           </Tile>,
+  //         );
+  //       }
+  //     }
+  //     person += 4;
+  //     return (
+  //       <div>
+  //         <TileRow>{tiles}</TileRow>
+  //       </div>
+  //     );
+  //   }
+  //   const rows = [];
+  //   while (person <= this.state.people.length) {
+  //     rows.push(createTiles());
+  //   }
+  //   return <div>{rows}</div>;
+  // };
+
+  // create row with 4 tiles
+  //
 
   render() {
     return (
@@ -64,13 +166,14 @@ export default class Refugees extends React.PureComponent {
           <Header>
             <FormattedMessage {...messages.header} />
           </Header>
+          {this.createTiles()}
           <TileRow>
-            <LeftTile onClick={this.toggleModal}>
+            <Tile onClick={this.toggleModal}>
               <CircleProfile src={this.state.people[0].img}>
                 {/* <ProfileImage src={img} alt="picture here" /> */}
               </CircleProfile>
               {this.state.people[0].name}
-            </LeftTile>
+            </Tile>
             <Tile>
               <CircleProfile src={this.state.people[1].img}>
                 {/* <ProfileImage src={img} alt="picture here" /> */}
@@ -83,37 +186,39 @@ export default class Refugees extends React.PureComponent {
               </CircleProfile>
               <FormattedMessage {...messages.one} />
             </Tile>
-            <RightTile>
+            <Tile>
               <CircleProfile src={this.state.people[1].img}>
                 {/* <ProfileImage src={img} alt="picture here" /> */}
               </CircleProfile>
               <FormattedMessage {...messages.two} />
-            </RightTile>
+            </Tile>
           </TileRow>
-          <LeftTile>
-            <CircleProfile src={this.state.people[0].img}>
-              {/* <ProfileImage src={img} alt="picture here" /> */}
-            </CircleProfile>
-            <FormattedMessage {...messages.one} />
-          </LeftTile>
-          <Tile>
-            <CircleProfile src={this.state.people[1].img}>
-              {/* <ProfileImage src={img} alt="picture here" /> */}
-            </CircleProfile>
-            <FormattedMessage {...messages.two} />
-          </Tile>
-          <Tile>
-            <CircleProfile src={this.state.people[0].img}>
-              {/* <ProfileImage src={img} alt="picture here" /> */}
-            </CircleProfile>
-            <FormattedMessage {...messages.one} />
-          </Tile>
-          <RightTile>
-            <CircleProfile src={this.state.people[1].img}>
-              {/* <ProfileImage src={img} alt="picture here" /> */}
-            </CircleProfile>
-            <FormattedMessage {...messages.two} />
-          </RightTile>
+          <TileRow>
+            <Tile>
+              <CircleProfile src={this.state.people[0].img}>
+                {/* <ProfileImage src={img} alt="picture here" /> */}
+              </CircleProfile>
+              <FormattedMessage {...messages.one} />
+            </Tile>
+            <Tile>
+              <CircleProfile src={this.state.people[1].img}>
+                {/* <ProfileImage src={img} alt="picture here" /> */}
+              </CircleProfile>
+              <FormattedMessage {...messages.two} />
+            </Tile>
+            <Tile>
+              <CircleProfile src={this.state.people[0].img}>
+                {/* <ProfileImage src={img} alt="picture here" /> */}
+              </CircleProfile>
+              <FormattedMessage {...messages.one} />
+            </Tile>
+            <Tile>
+              <CircleProfile src={this.state.people[1].img}>
+                {/* <ProfileImage src={img} alt="picture here" /> */}
+              </CircleProfile>
+              <FormattedMessage {...messages.two} />
+            </Tile>
+          </TileRow>
         </div>
       </div>
     );

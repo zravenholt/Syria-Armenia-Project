@@ -2,8 +2,9 @@ import styled from 'styled-components';
 
 const TileRow = styled.div`
   position: relative;
-  display: block-inline;
-  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 50px;
   margin-top: 25px;
   height: 350px;

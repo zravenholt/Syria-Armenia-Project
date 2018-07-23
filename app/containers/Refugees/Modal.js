@@ -10,18 +10,11 @@ import ModalWrapper from './ModalWrapper';
 import VideoWrapper from './VideoWrapper';
 import ProfileContainer from './ProfileContainer';
 import TextContainer from './TextContainer';
+import CloseButton from './CloseButton';
 
 import image from '../../images/exampleSquare.jpg';
 
 class Modal extends React.PureComponent {
-  constructor(props) {
-    super(props);
-    this.state = {
-      // this was used for testing possible internet housing for videos
-      video:
-        'https://drive.google.com/file/d/1BcuhjPVvYuEr0s_KFvtfGGPse4kjErSv/view',
-    };
-  }
   render() {
     if (!this.props.show) {
       return null;
@@ -31,13 +24,14 @@ class Modal extends React.PureComponent {
       <div>
         <ModalWrapper>
           <ProfileContainer>
-            <BigCircleProfile src={image} onClick={this.props.onClose} />
+            <CloseButton onClick={this.props.onClose}>X</CloseButton>
+            <BigCircleProfile src={image} />
             <TextContainer />
             <VideoWrapper>
               {/* eslint-disable */}
               <video
                 src={video}
-                width="680px"
+                width="100%"
                 display="block"
                 margin="auto"
                 margin-top="25px"
