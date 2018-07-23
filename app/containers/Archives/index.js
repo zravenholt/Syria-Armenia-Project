@@ -9,6 +9,12 @@
  * the linting exception.
  */
 
+// name
+// date
+// location of interview
+// Inverviewer
+// Translator
+
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
 import video from 'file-loader!../../assets/Abdullah_Haddad_Full_Interview.mov';
@@ -33,6 +39,11 @@ export default class Archives extends React.PureComponent {
           videoName: 'example1',
           url: video,
           script: track,
+          name: 'Angel Ajemian',
+          date: '7/26/2017',
+          location: 'Yerevan, Armenia',
+          interviewer: 'Ani Schug',
+          translator: 'Hagop Kazanjian',
         },
         {
           videoName: 'example2',
