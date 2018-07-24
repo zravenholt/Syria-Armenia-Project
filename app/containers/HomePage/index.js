@@ -18,6 +18,7 @@ import Blurb from './Blurb';
 import FeaturedVideo from './FeaturedVideo';
 import Separator from './separator';
 import Link from './Link';
+import LinkContainer from './LinkContainer';
 import VideoPanel from './VideoPanel';
 
 /* eslint-disable react/prefer-stateless-function */
@@ -29,15 +30,17 @@ export default class HomePage extends React.PureComponent {
           <Background />
         </div>
         <div>
-          <Link href="/archives" to="/archives">
-            Video Archives
-          </Link>
-          <Link href="/people" to="/people">
-            Refugees
-          </Link>
-          <Link href="/about" to="/about">
-            About Us
-          </Link>
+          <LinkContainer>
+            <Link href="/archives" to="/archives">
+              Video Archives
+            </Link>
+            <Link href="/people" to="/people">
+              Refugees
+            </Link>
+            <Link href="/about" to="/about">
+              About Us
+            </Link>
+          </LinkContainer>
           <Title>
             <FormattedMessage {...messages.header} />
           </Title>

@@ -2,10 +2,8 @@ import styled from 'styled-components';
 
 const Link = styled.a`
   position: relative;
-  display: block-inline;
-  float: left;
+  width: 25%;
   margin-top: 10px;
-  margin-left: 19%;
   color: #6d6d6d;
   text-decoration: none;
   text-align: center;

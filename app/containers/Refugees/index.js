@@ -11,6 +11,7 @@ import Tile from './Tile';
 import TileRow from './TileRow';
 import CircleProfile from './CircleProfile';
 import Modal from './Modal';
+import LinkContainer from './LinkContainer';
 // import ProfileImage from './ProfileImage';
 
 import image from '../../images/exampleSquare.jpg';
@@ -134,15 +135,17 @@ export default class Refugees extends React.PureComponent {
           <Modal show={this.state.isOpen} onClose={this.toggleModal} />
         </div>
         <div>
-          <Link href="/archives" to="/archives">
-            Video Archives
-          </Link>
-          <Link href="/" to="/">
-            Home
-          </Link>
-          <Link href="/about" to="/about">
-            About Us
-          </Link>
+          <LinkContainer>
+            <Link href="/archives" to="/archives">
+              Video Archives
+            </Link>
+            <Link href="/" to="/">
+              Home
+            </Link>
+            <Link href="/about" to="/about">
+              About Us
+            </Link>
+          </LinkContainer>
           <Header>
             <FormattedMessage {...messages.header} />
           </Header>

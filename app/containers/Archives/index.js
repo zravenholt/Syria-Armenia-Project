@@ -27,6 +27,7 @@ import ListWrapper from './ListWrapper';
 import VideoTitle from './VideoTitle';
 import Modal from './Modal';
 import Background from './Background';
+import LinkContainer from './LinkContainer';
 
 /* eslint-disable react/prefer-stateless-function */
 export default class Archives extends React.PureComponent {
@@ -126,15 +127,17 @@ export default class Archives extends React.PureComponent {
           />
         </div>
         <div>
-          <Link href="/people" to="/people">
-            Refugees
-          </Link>
-          <Link href="/" to="/">
-            Home
-          </Link>
-          <Link href="/about" to="/about">
-            About Us
-          </Link>
+          <LinkContainer>
+            <Link href="/people" to="/people">
+              Refugees
+            </Link>
+            <Link href="/" to="/">
+              Home
+            </Link>
+            <Link href="/about" to="/about">
+              About Us
+            </Link>
+          </LinkContainer>
           <Header>
             <FormattedMessage {...messages.header} />
           </Header>
