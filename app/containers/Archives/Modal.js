@@ -11,7 +11,7 @@ import PropTypes from 'prop-types';
 
 import ModalWrapper from './ModalWrapper';
 import ModalContainer from './ModalContainer';
-import VideoWrapper from './VideoWrapper';
+import VideoContainer from './VideoContainer';
 import TextWrapper from './TextWrapper';
 import Name from './Name';
 import Date from './Date';
@@ -40,27 +40,11 @@ class Modal extends React.PureComponent {
               </Interviewer>
               <Translator>Translator: {this.props.video.translator}</Translator>
             </TextWrapper>
-            <VideoWrapper>
-              {/* eslint-disable */}
-              <video
-                src={this.props.video.url}
-                width="100%"
-                display="block"
-                margin="auto"
-                margin-top="25px"
-                height="auto"
-                controls
-              >
-              {/* eslint-enable */}
-                <track
-                  kind="subtitles"
-                  label="English subtitles"
-                  src={this.props.video.script}
-                  srcLang="en"
-                  default
-                />
-              </video>
-            </VideoWrapper>
+            <VideoContainer
+              src={this.props.video.url}
+              allowFullScreen="true"
+              controls
+            />
           </ModalContainer>
         </ModalWrapper>
       </div>

@@ -21,35 +21,37 @@ class TextContainer extends React.PureComponent {
           <SmallName>{this.props.person.arabicName}</SmallName>
           <Location>Birthplace: {this.props.person.birthplace}</Location>
           <SmallLocation>
-            Ծննդավայր {this.props.person.armenianBirthplace}
+            Ծննդավայր - {this.props.person.armenianBirthplace}
           </SmallLocation>
           <SmallLocation>
-            مكان الولادة {this.props.person.arabicBirthplace}
+            مكان الولادة - {this.props.person.arabicBirthplace}
           </SmallLocation>
           <Location>Ancestral City: {this.props.person.ancestralCity}</Location>
           <SmallLocation>
-            Ծննդավայր {this.props.person.armenianAncestralCity}
+            Ծննդավայր - {this.props.person.armenianAncestralCity}
           </SmallLocation>
           <SmallLocation>
-            مكان الولادة {this.props.person.arabicAncestralCity}
+            مكان الولادة - {this.props.person.arabicAncestralCity}
           </SmallLocation>
           <Location>
             City of Residence: {this.props.person.cityOfResidence}
           </Location>
           <SmallLocation>
-            Բնակավայր {this.props.person.armenianCityOfResidence}
+            Բնակավայր - {this.props.person.armenianCityOfResidence}
           </SmallLocation>
           <SmallLocation>
-            مدينة الاقامة {this.props.person.arabicCityOfResidence}
+            مدينة الاقامة - {this.props.person.arabicCityOfResidence}
           </SmallLocation>
           <Location>Route: {this.props.person.route}</Location>
           <SmallLocation>
-            Ճամբայ {this.props.person.armenianRoute}
+            Ճամբայ - {this.props.person.armenianRoute}
           </SmallLocation>
-          <SmallLocation>الطريق {this.props.person.arabicRoute}</SmallLocation>
+          <SmallLocation>
+            الطريق - {this.props.person.arabicRoute}
+          </SmallLocation>
           <Location>Age: {this.props.person.age}</Location>
-          <SmallLocation>Տարիք {this.props.person.age}</SmallLocation>
-          <SmallLocation>عمر {this.props.person.age}</SmallLocation>
+          <SmallLocation>Տարիք - {this.props.person.age}</SmallLocation>
+          <SmallLocation>عمر - {this.props.person.age}</SmallLocation>
           <Bio>{this.props.person.quote}</Bio>
         </TextWrapper>
       </div>
