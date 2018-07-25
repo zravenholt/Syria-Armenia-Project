@@ -151,7 +151,7 @@ export default class Archives extends React.PureComponent {
         <div>
           <LinkContainer>
             <Link href="/people" to="/people">
-              Refugees
+              Profiles
             </Link>
             <Link href="/" to="/">
               Home

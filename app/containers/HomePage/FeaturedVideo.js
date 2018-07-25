@@ -6,7 +6,7 @@ const FeaturedVideo = styled.div`
   width: 100%;
   height: 100px;
   padding-top: 50px;
-  padding-bottom: 1000px;
+  padding-bottom: 800px;
   text-align: center;
   font-size: 60px;
   font-family: serif;

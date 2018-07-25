@@ -11,7 +11,7 @@ const Link = styled.a`
   font-family: serif;
   z-index: 2;
   &:hover {
-    color: grey;
+    color: #474747;
   }
 `;
 

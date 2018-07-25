@@ -12,7 +12,7 @@ export default defineMessages({
   },
   blurb: {
     id: 'app.components.HomePage.blurb',
-    defaultMessage: 'Hear their stories, see their struggles',
+    defaultMessage: 'Hear their stories',
   },
   video: {
     id: 'app.components.HomePage.video',

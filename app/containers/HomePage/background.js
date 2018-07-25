@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import img from '../../images/syria-refugees.jpg';
+import img from '../../images/HomePage.jpg';
 
 const Background = styled.div`
   position: fixed;

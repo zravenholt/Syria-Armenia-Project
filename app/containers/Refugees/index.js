@@ -2250,7 +2250,7 @@ export default class Refugees extends React.PureComponent {
         <div>
           <LinkContainer>
             <Link href="/archives" to="/archives">
-              Video Archives
+              Archives
             </Link>
             <Link href="/" to="/">
               Home

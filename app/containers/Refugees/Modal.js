@@ -34,6 +34,7 @@ class Modal extends React.PureComponent {
                   ? this.props.person.fullVideoLink
                   : this.props.person.shortVideoLink
               }
+              allowFullScreen="true"
               controls
             />
             {/* <VideoWrapper> */}

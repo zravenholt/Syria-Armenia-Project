@@ -8,7 +8,7 @@ const Title = styled.div`
   width: 100%;
   color: white;
   text-align: center;
-  font-size: 90px;
+  font-size: 120px;
   font-family: cursive;
   text-shadow: 5px 5px 15px rgba(150, 150, 150, 1);
   z-index: 1;

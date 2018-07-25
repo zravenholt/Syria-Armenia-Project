@@ -32,10 +32,10 @@ export default class HomePage extends React.PureComponent {
         <div>
           <LinkContainer>
             <Link href="/archives" to="/archives">
-              Video Archives
+              Archives
             </Link>
             <Link href="/people" to="/people">
-              Refugees
+              Profiles
             </Link>
             <Link href="/about" to="/about">
               About Us
@@ -51,7 +51,7 @@ export default class HomePage extends React.PureComponent {
           <FeaturedVideo>
             <FormattedMessage {...messages.video} />
             <VideoPanel
-              src="https://www.youtube.com/embed/xO8Cz-9qKTI"
+              src="https://www.youtube.com/embed/N016Ka053tQ"
               allowFullScreen="true"
             />
           </FeaturedVideo>
