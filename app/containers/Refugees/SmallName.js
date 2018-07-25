@@ -1,15 +1,15 @@
 import styled from 'styled-components';
 
-const Location = styled.div`
+const SmallName = styled.div`
   position: relative;
   display: block;
   margin: auto;
-  margin-top: 5px;
   width: 100%;
   color: black;
-  font-size: 30px;
-  font-family: Times New Roman;
+  text-align: center;
+  font-size: 25px;
+  font-family: Georgia;
   z-index: 1;
 `;
 
-export default Location;
+export default SmallName;

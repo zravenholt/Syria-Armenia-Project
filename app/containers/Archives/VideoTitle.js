@@ -3,8 +3,8 @@ import styled from 'styled-components';
 const VideoTitle = styled.li`
   list-style-type: none;
   height: 100%;
-  font-size: 30px;
-  margin-top: 15px;
+  font-size: 35px;
+  margin-top: 20px;
   background-color: white;
   border-radius: 5px;
   padding-left: 10px;

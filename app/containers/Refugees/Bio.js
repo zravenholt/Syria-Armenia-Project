@@ -4,6 +4,7 @@ const Bio = styled.div`
   position: relative;
   display: block;
   margin: auto;
+  margin-top: 10px;
   width: 100%;
   color: black;
   font-size: 22px;

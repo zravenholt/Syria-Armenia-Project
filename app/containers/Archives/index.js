@@ -38,6 +38,33 @@ export default class Archives extends React.PureComponent {
       selectedVideo: null,
       VideoList: [
         {
+          name: 'Angel Ajemian',
+          armenianName: 'Անճէլ Աճէմեան',
+          arabicName: '',
+          cityOfResidence: 'Yerevan, Armenia',
+          armenianCityOfResidence: 'Երեւան, Հայաստան',
+          arabicCityOfResidence: 'يريفان، أرمينيا',
+          age: 37,
+          armenianAge: 37,
+          arabicAge: 37,
+          birthplace: 'Kuwait',
+          armenianBirthplace: 'Քուվեյթ',
+          arabicBirthplace: 'الكويت',
+          ancestralCity: 'Sassoun',
+          armenianAncestralCity: 'Սասուն',
+          arabicAncestralCity: 'ساسون',
+          route: 'Bus to Beirut, Airplane to Yerevan',
+          armenianRoute: 'Ավտոպուս դէպի Պէյրութ, Օդանաւ դէպի Երեւան',
+          arabicRoute: 'أتوبيس إلی بيروت وطائرة إلی يريفان ',
+          quote:
+            'A lawyer called me and told me he had been kidnapped by ISIS alongside my husband, Minas. I did not believe him. I thought he was lying because everyone knew my husband was kidnapped and maybe this man just wanted to upset me.  But then he said, “You have three candles.” Minas used to say that our three kids were candles that lit up our life. When the man said that I knew that he had been with Minas.',
+          shortVideoLink: '',
+          fullVideoLink: 'https://www.youtube.com/embed/k-YK154hxO0',
+          img:
+            'https://www.flickr.com/photos/165564667@N06/43479300282/in/dateposted-public/',
+        },
+
+        {
           videoName: 'Video of Angel Ajemian',
           url: video,
           script: track,
@@ -46,11 +73,6 @@ export default class Archives extends React.PureComponent {
           location: 'Yerevan, Armenia',
           interviewer: 'Ani Schug',
           translator: 'Hagop Kazanjian',
-        },
-        {
-          videoName: 'example2',
-          url: video,
-          script: track,
         },
         {
           videoName: 'example3',
