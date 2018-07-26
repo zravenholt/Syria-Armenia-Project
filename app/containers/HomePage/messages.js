@@ -16,6 +16,6 @@ export default defineMessages({
   },
   video: {
     id: 'app.components.HomePage.video',
-    defaultMessage: 'Featured Video',
+    defaultMessage: 'Promotional Video',
   },
 });
