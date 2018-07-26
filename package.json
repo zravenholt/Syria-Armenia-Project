@@ -1,10 +1,10 @@
 {
-  "name": "rerooted",
+  "name": "react-boilerplate",
   "version": "3.6.0",
   "description": "A highly scalable, offline-first foundation with the best DX and a focus on performance and best practices",
   "repository": {
     "type": "git",
-    "url": "https://github.com/zravenholt/Syria-Armenia-Project.git"
+    "url": "git://github.com/react-boilerplate/react-boilerplate.git"
   },
   "engines": {
     "npm": ">=5",
@@ -13,6 +13,7 @@
   "author": "Max Stoiber",
   "license": "MIT",
   "scripts": {
+    "heroku-postbuild": "npm run build",
     "analyze:clean": "rimraf stats.json",
     "preanalyze": "npm run analyze:clean",
     "analyze": "node ./internals/scripts/analyze.js",
