@@ -21,7 +21,7 @@ import Link from './Link';
 import LinkContainer from './LinkContainer';
 import VideoPanel from './VideoPanel';
 // import Rerooted from './Rerooted';
-// import img from '../../images/rerooted.png';
+// import img from '../../images/clearRerooted.png';
 
 /* eslint-disable react/prefer-stateless-function */
 export default class HomePage extends React.PureComponent {

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import img from '../../images/archivesBackground.jpg';
+import img from '../../images/Archives.jpg';
 
 const Background = styled.div`
   position: fixed;
