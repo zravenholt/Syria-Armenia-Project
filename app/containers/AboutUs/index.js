@@ -62,11 +62,11 @@ export default class HomePage extends React.PureComponent {
         name: 'Zane Ravenholt',
         img: zane,
         blurb1:
-          'Zane Ravenholt (26) is a 2015 Graduate from Claremont McKenna College, where he majored in Neuroscience and Economics. After working as a clinical researcher for UCSF for several years after graduating, he switched careers into Software Engineering. Throughout his still young life, he has had the luck and privilege to travel to over 45 countries with his family and friends, exposing him to foreign cultures, ideas, and ways of life.',
+          'Zane Ravenholt (26) is a 2015 graduate from Claremont McKenna College, where he majored in Neuroscience and Economics. After working as a clinical researcher for UCSF for several years after graduating, he switched careers into Software Engineering. Throughout his still young life, he has had the luck and privilege to travel to over 45 countries with his family and friends, exposing him to foreign cultures, ideas, and ways of life.',
         blurb2:
           "Because of his extensive travels and experiences, he has a keen interest in international affairs, as well as helping those who have been less fortunate than him. Some of his contributions to date include building soccer fields for impoverished areas of Uganda, volunteering over 900 hours at the Veteran's Affairs Hospital working with disabled veterans, and working with non-profits to improve and preserve the local ecosystems in his home state of Washington.",
         blurb3:
-          'Currently, Zane works as a Solution Architect for Qordoba, a startup in San Francisco focused on internationalizing other companies. In his down time, he enjoys sports, any and all videogames, and planning for the next step in his international travels. Looking towards the future, he is interested in continuing to develop his software skills, seeking new lands and experiences, and continuing to give back to those who need it most.',
+          'Currently, Zane works as a Solution Architect for Qordoba, a startup in San Francisco focused on helping companies internationalize. In his down time, he enjoys sports, any and all videogames, and planning for the next step in his international travels. Looking towards the future, he is interested in continuing to develop his software skills, seeking new lands and experiences, and continuing to give back to those who need it most.',
       },
       Anoush: {
         name: 'Anoush Baghdassarian',
