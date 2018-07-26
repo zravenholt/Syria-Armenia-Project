@@ -146,7 +146,7 @@ export default class HomePage extends React.PureComponent {
             <Creator>
               <CircleProfile src={this.state.Zane.img} />
               <SmallName>{this.state.Zane.name}</SmallName>
-              <SmallName>Website Creator</SmallName>
+              <SmallName>Website Developer</SmallName>
               <TextWrapper>{this.state.Zane.blurb1}</TextWrapper>
               <TextWrapper>{this.state.Zane.blurb2}</TextWrapper>
               <TextWrapper>{this.state.Zane.blurb3}</TextWrapper>
