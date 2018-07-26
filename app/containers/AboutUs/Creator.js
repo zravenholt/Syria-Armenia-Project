@@ -4,7 +4,7 @@ const Creator = styled.div`
   position: relative;
   width: 30%;
   margin: 10px;
-  height: 1350px;
+  height: 1250px;
   z-index: 3;
   background-color: white;
   border-radius: 5px;

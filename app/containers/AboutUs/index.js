@@ -54,7 +54,7 @@ export default class HomePage extends React.PureComponent {
         blurb3:
           'Thank you for visiting our site, and please continue visiting us for our frequent updates. We will keep posting more of our over 60 interviews, and plan to have the interviews as well as English and Western Armenian transcripts available for each. We want to make our website, videos, and transcripts available for many purposes-- be it for educational, advocacy or scholarly pursuits. Our interviews of a community twice displaced in 100 years have so much to share with a wide audience in our current political climate--whether about refugee integration policy, sectarian relations in the Middle East, or the effects of displacement on ethnic minorities. We will be exploring these messages through talks, lesson plans, and connections with educational institutions that will ensure our archive is utilized and shared widely.',
         blurb4:
-          'We encourage you to stay in touch with Rerooted with your questions, suggestions, or simply sharing with us how you are utilizing this archive. Please send your correspondence to rerooted.archive@gmail.com.',
+          'We encourage you to stay in touch with Rerooted with your questions, suggestions, or simply sharing with us how you are utilizing this archive. Please send your correspondence to rerooted.archive@gmail.com. We are so thankful to our partners listed below and the following individuals for their support of this project: Hagop Kazanjian, Garen Balkhian, Annie Akkam, Gohar Khachatrian, Raya Sargsyan, Astghik Sargysan, and Jennifer Papazian.',
         blurb5: 'Sirov,',
         blurb6: 'Ani and Anoush',
       },
@@ -72,7 +72,7 @@ export default class HomePage extends React.PureComponent {
         name: 'Anoush Baghdassarian',
         img: anoush,
         blurb1:
-          "Anoush Baghdassarian (23) holds an Honors Bachelors Degree from Claremont McKenna College, Magna Cum Laude, in Psychology and Spanish with a sequence in Holocaust and Human Rights studies. While in undergrad she made the most of the opportunities at the Mgrublian Center for Human Rights, working with asylum seekers, victims of human trafficking, holocaust survivors, and scholars on genocide and crimes against humanity. She was invited to international conferences like Poland's Model International Criminal Court, the Student Conference on US Affairs, and has presented her research at various forums including UCLA's Undergraduate Colloquium in Armenian Studies.",
+          'Anoush Baghdassarian (23) holds an Honors Bachelors Degree from Claremont McKenna College, Magna Cum Laude, in Psychology and Spanish with a sequence in Holocaust and Human Rights studies. While in undergrad she made the most of the opportunities at the Mgrublian Center for Human Rights, working with asylum seekers, victims of human trafficking, holocaust survivors, and scholars on genocide and crimes against humanity.',
         blurb2:
           'Anoush has interned at various human rights organizations throughout her undergraduate career including Human Rights Watch and the Cardozo Law Institute in Holocaust and Human Rights. Most recently, she has served as an advisor to the Armenian Permanent Mission to the United Nations, as well as an intern at the Ombudsman Human Rights Defender’s Office in Yerevan, Armenia.',
         blurb3:

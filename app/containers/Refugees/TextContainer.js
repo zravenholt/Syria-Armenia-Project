@@ -28,10 +28,10 @@ class TextContainer extends React.PureComponent {
           </SmallLocation>
           <Location>Ancestral City: {this.props.person.ancestralCity}</Location>
           <SmallLocation>
-            Ծննդավայր - {this.props.person.armenianAncestralCity}
+            Նախնիների Քաղաքը - {this.props.person.armenianAncestralCity}
           </SmallLocation>
           <SmallLocation>
-            مكان الولادة - {this.props.person.arabicAncestralCity}
+            مدينة الأجداد - {this.props.person.arabicAncestralCity}
           </SmallLocation>
           <Location>
             City of Residence: {this.props.person.cityOfResidence}
