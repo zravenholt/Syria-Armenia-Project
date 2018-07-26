@@ -1,17 +1,16 @@
 import styled from 'styled-components';
 
-const Header = styled.div`
+const SmallName = styled.div`
   position: relative;
   display: block;
   margin: auto;
-  padding-top: 5%;
-  margin-bottom: 5%;
+  margin-bottom: 2%;
   width: 100%;
-  color: white;
+  color: black;
   text-align: center;
-  font-size: 90px;
-  font-family: cursive;
+  font-size: 25px;
+  font-family: Georgia;
   z-index: 1;
 `;
 
-export default Header;
+export default SmallName;

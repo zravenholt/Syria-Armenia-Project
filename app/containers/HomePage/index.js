@@ -20,6 +20,8 @@ import Separator from './separator';
 import Link from './Link';
 import LinkContainer from './LinkContainer';
 import VideoPanel from './VideoPanel';
+// import Rerooted from './Rerooted';
+// import img from '../../images/rerooted.png';
 
 /* eslint-disable react/prefer-stateless-function */
 export default class HomePage extends React.PureComponent {
@@ -44,6 +46,7 @@ export default class HomePage extends React.PureComponent {
           <Title>
             <FormattedMessage {...messages.header} />
           </Title>
+          {/* <Rerooted src={img} /> */}
           <Blurb>
             <FormattedMessage {...messages.blurb} />
           </Blurb>
@@ -51,7 +54,7 @@ export default class HomePage extends React.PureComponent {
           <FeaturedVideo>
             <FormattedMessage {...messages.video} />
             <VideoPanel
-              src="https://www.youtube.com/embed/N016Ka053tQ"
+              src="https://www.youtube.com/embed/Z2xUDCkf78M"
               allowFullScreen="true"
             />
           </FeaturedVideo>

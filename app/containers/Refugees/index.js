@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
-import video1 from 'file-loader!../../assets/Angel_Long_Video.mov';
+import video1 from '../../images/exampleSquare.jpg';
 // import video2 from 'file-loader!../../assets/Abdullah_Haddad_Full_Interview.mov';
 
 import messages from './messages';
@@ -86,6 +86,8 @@ import sakoSarkisian from '../../images/Sako_Sarkisian.jpg';
 import hovsepKazanjian from '../../images/Hovsep_Kazanjian.jpg';
 import dikranuhiJrazian from '../../images/Dikranuhi_Jrazian.jpg';
 import arshoughKakoyian from '../../images/Arshough_Kakoyian.jpg';
+
+import rerooted from '../../images/rerooted.png';
 
 export default class Refugees extends React.PureComponent {
   constructor(props) {
@@ -428,7 +430,7 @@ export default class Refugees extends React.PureComponent {
             "In my grandfather’s life he never laughed. He never had a smile. We would say, “Dede, why don’t you laugh?” He said, “How could I laugh? When I was seven years old, I lost my seven siblings and saw my mother leave my baby brother behind in the desert.I will never be able to not see that.” He never laughed....It is very good to tell these stories so that we as Armenians do not forget or lose them. Our generation and our kids' and their kids’ generations should know that Armenians still exist. Yes, we are few, but we are Armenian, and we will not forget it.",
           shortVideoLink: '',
           fullVideoLink: '',
-          img: 'need generic',
+          img: rerooted,
           video: video1,
         },
         {
@@ -923,7 +925,7 @@ export default class Refugees extends React.PureComponent {
             'Sultan Abdul Hamid said there will only be enough Armenians to put in museums....We proved that wrong by prospering...and preserving our Armenian letters and creating schools. Wherever Armenians went they started schools, and those schools are the reasons Armenians preserved and protected their language, culture, nation, and beliefs.',
           shortVideoLink: '',
           fullVideoLink: '',
-          img: 'need generic',
+          img: rerooted,
           video: video1,
         },
         {
@@ -1304,7 +1306,7 @@ export default class Refugees extends React.PureComponent {
           quote: '',
           shortVideoLink: '',
           fullVideoLink: '',
-          img: 'need generic',
+          img: rerooted,
           video: video1,
         },
         {
@@ -1329,7 +1331,7 @@ export default class Refugees extends React.PureComponent {
           quote: '',
           shortVideoLink: '',
           fullVideoLink: '',
-          img: 'need generic',
+          img: rerooted,
           video: video1,
         },
         {
@@ -1704,7 +1706,7 @@ export default class Refugees extends React.PureComponent {
           quote: '',
           shortVideoLink: '',
           fullVideoLink: '',
-          img: 'need generic',
+          img: rerooted,
           video: video1,
         },
         {
@@ -1804,7 +1806,7 @@ export default class Refugees extends React.PureComponent {
           quote: '',
           shortVideoLink: '',
           fullVideoLink: '',
-          img: 'need generic',
+          img: rerooted,
           video: video1,
         },
         {

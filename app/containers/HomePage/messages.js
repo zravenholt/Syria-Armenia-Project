@@ -8,7 +8,7 @@ import { defineMessages } from 'react-intl';
 export default defineMessages({
   header: {
     id: 'app.components.HomePage.header',
-    defaultMessage: 'Re-Rooted',
+    defaultMessage: 'ReRooted',
   },
   blurb: {
     id: 'app.components.HomePage.blurb',
