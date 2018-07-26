@@ -191,6 +191,16 @@ export default class HomePage extends React.PureComponent {
                 </UrlContainer>
               </Partner>
             </Partners>
+            <SmallName>Please follow us at:</SmallName>
+            <UrlContainer href="https://www.instagram.com/rerooted.archive/">
+              @rerooted.archive on Instagram
+            </UrlContainer>
+            <UrlContainer href="https://www.facebook.com/Rerooted.Archive">
+              Our Facebook
+            </UrlContainer>
+            <UrlContainer href="https://www.twitter.com">
+              @RerootedArchive on Twitter
+            </UrlContainer>
           </TitleWrapper>
         </div>
       </div>
