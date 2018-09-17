@@ -8,6 +8,7 @@ import video1 from '../../images/exampleSquare.jpg';
 import messages from './messages';
 import Header from './Header';
 import Link from './Link';
+import Search from './Input';
 import Background from './background';
 import Tile from './Tile';
 import TileRow from './TileRow';
@@ -94,6 +95,7 @@ export default class Refugees extends React.PureComponent {
     super(props);
     this.state = {
       selectedPerson: null,
+      selectedPeople: null,
       people: [
         {
           name: 'Angel Ajemian',
@@ -2199,19 +2201,23 @@ export default class Refugees extends React.PureComponent {
   };
 
   createTiles = total => {
+    const people =
+      this.state.selectedPeople === null
+        ? this.state.people
+        : this.state.selectedPeople;
     const tiles = [];
     for (let i = 0; i < 4; i += 1) {
-      if (this.state.people[total + i]) {
+      if (people[total + i]) {
         tiles.push(
           <Tile
             onClick={() => {
-              this.handleClick(this.state.people[total + i]);
+              this.handleClick(people[total + i]);
             }}
           >
-            <CircleProfile src={this.state.people[total + i].img}>
+            <CircleProfile src={people[total + i].img}>
               {/* <ProfileImage src={img} alt="picture here" /> */}
             </CircleProfile>
-            {this.state.people[total + i].name}
+            {people[total + i].name}
           </Tile>,
         );
       }
@@ -2224,13 +2230,72 @@ export default class Refugees extends React.PureComponent {
   };
 
   createRows = () => {
+    const people =
+      this.state.selectedPeople === null
+        ? this.state.people
+        : this.state.selectedPeople;
     const rows = [];
     let total = 0;
-    while (total < this.state.people.length) {
+    while (total < people.length) {
       rows.push(this.createTiles(total));
       total += 4;
     }
     return <div>{rows}</div>;
+  };
+
+  searchString = (s, v) => {
+    const characters = v.split('');
+    const search = s.split('');
+
+    for (let i = 0; i < characters.length; i += 1) {
+      if (characters[i] === search[0]) {
+        let l = 0;
+        let total = 0;
+        while (l < search.length) {
+          if (
+            typeof characters[i + l] === 'string' &&
+            characters[i + l] === search[l]
+          ) {
+            total += 1;
+          }
+          l += 1;
+        }
+        if (l === total) {
+          return true;
+        }
+        return false;
+      }
+    }
+    return null; // arrow function asks that something be returned.
+  };
+
+  searchProfiles = e => {
+    if (e.key === 'Enter') {
+      if (e.target.value === '') {
+        this.setState({ selectedPeople: this.state.people });
+        return null;
+      }
+      const hits = [];
+      console.log('search triggered');
+      console.log(e.target.value);
+      for (let i = 0; i < this.state.people.length; i += 1) {
+        const v = Object.values(this.state.people[i]);
+        for (let j = 0; j < v.length; j += 1) {
+          if (typeof v[j] === 'string') {
+            if (
+              this.searchString(
+                e.target.value.toLowerCase(),
+                v[j].toLowerCase(),
+              )
+            ) {
+              hits.push(this.state.people[i]);
+            }
+          }
+        }
+      }
+      this.setState({ selectedPeople: hits });
+    }
+    return null;
   };
 
   // create row with 4 tiles
@@ -2264,6 +2329,7 @@ export default class Refugees extends React.PureComponent {
           <Header>
             <FormattedMessage {...messages.header} />
           </Header>
+          <Search id="searchField" onKeyUp={this.searchProfiles} />
           {this.createRows()}
         </div>
       </div>
