@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 
-const Tile = styled.div`
-  height: 350px;
-  margin: 10px;
-  width: 300px;
+const Filter = styled.div`
+  background-color: white;
+  height: 250px;
+  width: 69%;
+  margin: auto;
   text-decoration: none;
   text-align: center;
   font-size: 30px;
@@ -12,4 +13,4 @@ const Tile = styled.div`
   z-index: 2;
 `;
 
-export default Tile;
+export default Filter;

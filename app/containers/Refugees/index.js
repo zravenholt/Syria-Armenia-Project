@@ -9,12 +9,17 @@ import messages from './messages';
 import Header from './Header';
 import Link from './Link';
 import Search from './Input';
-import Background from './background';
+import SearchContainer from './SearchContainer';
 import Tile from './Tile';
 import TileRow from './TileRow';
 import CircleProfile from './CircleProfile';
+import FilterItemsContainer from './FilterItemsContainer';
 import Modal from './Modal';
 import LinkContainer from './LinkContainer';
+import Filter from './Filter';
+import FilterTitle from './FilterTitle';
+import FilterCategory from './FilterCategory';
+import FilterOption from './FilterOption';
 // import ProfileImage from './ProfileImage';
 
 import angelAjemian from '../../images/Angel_Ajemian.jpg';
@@ -2270,11 +2275,10 @@ export default class Refugees extends React.PureComponent {
   };
 
   searchProfiles = e => {
-    if (e.key === 'Enter') {
-      if (e.target.value === '') {
-        this.setState({ selectedPeople: this.state.people });
-        return null;
-      }
+    if (e.target.value === '') {
+      this.setState({ selectedPeople: this.state.people });
+      return null;
+    } else if (e.key === 'Enter') {
       const hits = [];
       console.log('search triggered');
       console.log(e.target.value);
@@ -2304,9 +2308,9 @@ export default class Refugees extends React.PureComponent {
   render() {
     return (
       <div>
-        <div>
+        {/* <div>
           <Background />
-        </div>
+        </div> */}
         <div>
           <Modal
             show={this.state.isOpen}
@@ -2329,7 +2333,34 @@ export default class Refugees extends React.PureComponent {
           <Header>
             <FormattedMessage {...messages.header} />
           </Header>
-          <Search id="searchField" onKeyUp={this.searchProfiles} />
+          <Filter>
+            <SearchContainer>
+              Search:
+              <Search id="searchField" onKeyUp={this.searchProfiles} />
+            </SearchContainer>
+            <FilterItemsContainer>
+              <FilterTitle>Filters</FilterTitle>
+              <FilterCategory>
+                Age:
+                <FilterOption>18 - 25</FilterOption>
+                <FilterOption>26 - 40</FilterOption>
+                <FilterOption>41 - 60</FilterOption>
+                <FilterOption>60+</FilterOption>
+              </FilterCategory>
+              <FilterCategory>
+                Location:
+                <FilterOption>Aleppo</FilterOption>
+                <FilterOption>Yerevan</FilterOption>
+                <FilterOption>Beirut</FilterOption>
+              </FilterCategory>
+              <FilterCategory>
+                Birthplace:
+                <FilterOption>Kuwait</FilterOption>
+                <FilterOption>Syria</FilterOption>
+                <FilterOption>Armenia</FilterOption>
+              </FilterCategory>
+            </FilterItemsContainer>
+          </Filter>
           {this.createRows()}
         </div>
       </div>

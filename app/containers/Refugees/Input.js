@@ -1,14 +1,12 @@
 import styled from 'styled-components';
 
 const Search = styled.input`
-  position: relative;
   display: block;
   margin: auto;
-  width: 25%;
-  margin-top: 10px;
-  z-index: 2;
+  width: 70%;
   background-color: white;
-  border-radius: 2px black;
+  border: 2px solid black;
+  border-radius: 2px;
 `;
 
 export default Search;
