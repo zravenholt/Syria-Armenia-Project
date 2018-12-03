@@ -3,9 +3,9 @@ import styled from 'styled-components';
 const LinkContainer = styled.div`
   position: relative;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   width: 100%;
+  background-color: #8c0000;
 `;
 
 export default LinkContainer;

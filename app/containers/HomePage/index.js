@@ -10,18 +10,35 @@
  */
 
 import React from 'react';
-import { FormattedMessage } from 'react-intl';
-import messages from './messages';
-import Background from './background';
-import Title from './Title';
-import Blurb from './Blurb';
-import FeaturedVideo from './FeaturedVideo';
-import Separator from './separator';
+// import { FormattedMessage } from 'react-intl';
+// import messages from './messages';
+// import Background from './background';
+// import Title from './Title';
+// import Blurb from './Blurb';
+// import FeaturedVideo from './FeaturedVideo';
+// import Separator from './separator';
 import Link from './Link';
+import InnerLink from './InnerLink';
+import Gif from './Gif';
 import LinkContainer from './LinkContainer';
-import VideoPanel from './VideoPanel';
+import Dropdown from './Dropdown';
+// import VideoPanel from './VideoPanel';
+import VideoBackground from './VideoBackground';
+import VideoForeground from './VideoForeground';
 // import Rerooted from './Rerooted';
-// import img from '../../images/clearRerooted.png';
+import logo from '../../images/rerooted.gif';
+
+const videoStyles = {
+  position: 'absolute',
+  top: 0,
+  left: 0,
+  width: '100%',
+  height: '100%',
+};
+
+const backgroundStyles = {
+  backgroundColor: '#6B6B6B',
+};
 
 /* eslint-disable react/prefer-stateless-function */
 export default class HomePage extends React.PureComponent {
@@ -29,35 +46,62 @@ export default class HomePage extends React.PureComponent {
     return (
       <div>
         <div>
-          <Background />
+          {/* <Background /> */}
+          <VideoBackground>
+            <VideoForeground>
+              <iframe
+                title="test"
+                src="https://www.youtube.com/embed/q2AIoBk3phk?autoplay=1&modestbranding=0&controls=0&mute=1&loop=1&playlist=q2AIoBk3phk"
+                frameBorder="0"
+                allowFullScreen
+                style={videoStyles}
+              />
+            </VideoForeground>
+          </VideoBackground>
         </div>
-        <div>
+        <div style={backgroundStyles}>
           <LinkContainer>
-            <Link href="/archives" to="/archives">
-              Archives
+            <Gif src={logo} />
+            <Link href="/about" to="/about">
+              About
+              <Dropdown id="drop1">
+                <InnerLink href="/about/creators" to="/about">
+                  Creators
+                </InnerLink>
+              </Dropdown>
             </Link>
             <Link href="/people" to="/people">
               Profiles
+              <Dropdown id="drop2">ITEM</Dropdown>
             </Link>
-            <Link href="/about" to="/about">
-              About Us
+            <Link href="/archives" to="/archives">
+              Archive
+              <Dropdown id="drop3">ITEM</Dropdown>
+            </Link>
+            <Link href="/partners" to="/partners">
+              Partners
+              <Dropdown id="drop3">ITEM</Dropdown>
+            </Link>
+            <Link href="/volunteer" to="/volunteer">
+              Get Involved
+              <Dropdown id="drop3">ITEM</Dropdown>
             </Link>
           </LinkContainer>
-          <Title>
+          {/* <Title>
             <FormattedMessage {...messages.header} />
-          </Title>
+          </Title> */}
           {/* <Rerooted src={img} /> */}
-          <Blurb>
+          {/* <Blurb>
             <FormattedMessage {...messages.blurb} />
-          </Blurb>
-          <Separator />
+          </Blurb> */}
+          {/* <Separator />
           <FeaturedVideo>
             <FormattedMessage {...messages.video} />
             <VideoPanel
               src="https://www.youtube.com/embed/Z2xUDCkf78M"
               allowFullScreen="true"
             />
-          </FeaturedVideo>
+          </FeaturedVideo> */}
         </div>
       </div>
     );

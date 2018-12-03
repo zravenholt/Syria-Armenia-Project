@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 
-const Link = styled.a`
+const InnerLink = styled.a`
   position: relative;
   color: white;
-  margin-top: 10px;
-  padding-right: 50px;
+  padding-left: 5px;
+  padding-right: 5px;
   text-decoration: none;
-  text-align: center;
+  text-align: right;
   font-size: 30px;
   font-family: serif;
   z-index: 2;
@@ -16,4 +16,4 @@ const Link = styled.a`
   }
 `;
 
-export default Link;
+export default InnerLink;

@@ -18,16 +18,22 @@ import HomePage from 'containers/HomePage/Loadable';
 import Refugees from 'containers/Refugees/Loadable';
 import Archives from 'containers/Archives/Loadable';
 import AboutUs from 'containers/AboutUs/Loadable';
+import Creators from 'containers/AboutUs/Creators/Loadable';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
+
+const Style = {
+  backgroundColor: 'white',
+};
 
 export default function App() {
   return (
-    <div>
+    <div style={Style}>
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route exact path="/people" component={Refugees} />
         <Route exact path="/archives" component={Archives} />
         <Route exact path="/about" component={AboutUs} />
+        <Route exact path="/about/creators" component={Creators} />
         <Route component={NotFoundPage} />
       </Switch>
     </div>

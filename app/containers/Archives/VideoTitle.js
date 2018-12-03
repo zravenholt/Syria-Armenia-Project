@@ -5,7 +5,7 @@ const VideoTitle = styled.li`
   height: 100%;
   font-size: 35px;
   margin-top: 20px;
-  background-color: white;
+  background-color: #f3f3f3;
   border-radius: 5px;
   padding-left: 10px;
   z-index: 3;

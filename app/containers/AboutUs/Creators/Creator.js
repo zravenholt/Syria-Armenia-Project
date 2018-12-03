@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const Creator = styled.div`
   position: relative;
-  width: 30%;
+  width: 40%;
   margin: 10px;
   height: 1000px;
   z-index: 1;

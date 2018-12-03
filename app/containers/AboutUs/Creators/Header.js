@@ -4,12 +4,11 @@ const Header = styled.div`
   position: relative;
   display: block;
   margin: auto;
-  padding-top: 5%;
-  margin-bottom: 5%;
+  padding-top: 50px;
   width: 100%;
   color: black;
   text-align: center;
-  font-size: 90px;
+  font-size: 60px;
   font-family: serif;
   z-index: 1;
 `;

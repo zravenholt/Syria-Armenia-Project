@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const FilterOption = styled.div`
-  background-color: grey;
+  border: 1px solid;
   margin: auto;
   align-items: center;
   justify-content: center;

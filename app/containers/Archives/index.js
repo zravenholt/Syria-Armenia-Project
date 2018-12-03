@@ -22,11 +22,14 @@ import track from 'file-loader!../../assets/test.vtt';
 
 import messages from './messages';
 import Link from './Link';
+import HomeLink from './HomeLink';
+import InnerLink from './InnerLink';
+import Dropdown from './Dropdown';
 import Header from './Header';
 import ListWrapper from './ListWrapper';
 import VideoTitle from './VideoTitle';
 import Modal from './Modal';
-import Background from './Background';
+// import Background from './Background';
 import LinkContainer from './LinkContainer';
 
 /* eslint-disable react/prefer-stateless-function */
@@ -181,9 +184,9 @@ export default class Archives extends React.PureComponent {
   render() {
     return (
       <div>
-        <div>
+        {/* <div>
           <Background />
-        </div>
+        </div> */}
         <div>
           <Modal
             show={this.state.isOpen}
@@ -193,14 +196,32 @@ export default class Archives extends React.PureComponent {
         </div>
         <div>
           <LinkContainer>
+            <HomeLink href="/" to="/">
+              ReRooted
+            </HomeLink>
+            <Link href="/about" to="/about">
+              About
+              <Dropdown id="drop1">
+                <InnerLink href="/about/creators" to="/about">
+                  Creators
+                </InnerLink>
+              </Dropdown>
+            </Link>
             <Link href="/people" to="/people">
               Profiles
+              <Dropdown id="drop2">ITEM</Dropdown>
             </Link>
-            <Link href="/" to="/">
-              Home
+            <Link href="/archives" to="/archives">
+              Archive
+              <Dropdown id="drop3">ITEM</Dropdown>
             </Link>
-            <Link href="/about" to="/about">
-              About Us
+            <Link href="/partners" to="/partners">
+              Partners
+              <Dropdown id="drop3">ITEM</Dropdown>
+            </Link>
+            <Link href="/volunteer" to="/volunteer">
+              Get Involved
+              <Dropdown id="drop3">ITEM</Dropdown>
             </Link>
           </LinkContainer>
           <Header>
