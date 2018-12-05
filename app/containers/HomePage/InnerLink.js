@@ -6,11 +6,11 @@ const InnerLink = styled.a`
   padding-left: 5px;
   padding-right: 5px;
   text-decoration: none;
-  text-align: right;
+  text-align: center;
   font-size: 30px;
   font-family: serif;
   z-index: 2;
-  float: right;
+  display: block;
   &:hover {
     text-shadow: 1px 1px 2px rgba(255, 255, 255, 1);
   }

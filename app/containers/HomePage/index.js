@@ -44,10 +44,10 @@ const backgroundStyles = {
 export default class HomePage extends React.PureComponent {
   render() {
     return (
-      <div>
+      <div style={backgroundStyles}>
         <div>
           {/* <Background /> */}
-          <VideoBackground>
+          {/* <VideoBackground>
             <VideoForeground>
               <iframe
                 title="test"
@@ -57,7 +57,7 @@ export default class HomePage extends React.PureComponent {
                 style={videoStyles}
               />
             </VideoForeground>
-          </VideoBackground>
+          </VideoBackground> */}
         </div>
         <div style={backgroundStyles}>
           <LinkContainer>
@@ -87,6 +87,17 @@ export default class HomePage extends React.PureComponent {
               <Dropdown id="drop3">ITEM</Dropdown>
             </Link>
           </LinkContainer>
+          <VideoBackground>
+            <VideoForeground>
+              <iframe
+                title="test"
+                src="https://www.youtube.com/embed/q2AIoBk3phk?autoplay=1&modestbranding=0&controls=0&mute=1&loop=1&playlist=q2AIoBk3phk"
+                frameBorder="0"
+                allowFullScreen
+                style={videoStyles}
+              />
+            </VideoForeground>
+          </VideoBackground>
           {/* <Title>
             <FormattedMessage {...messages.header} />
           </Title> */}

@@ -73,29 +73,48 @@ export default class Creators extends React.PureComponent {
           <HomeLink href="/" to="/">
             ReRooted
           </HomeLink>
-          <Link href="/about" to="/about">
+          <Link href="/about/project" to="/about/project">
             About
             <Dropdown>
-              <InnerLink href="/about/creators" to="/about">
+              <InnerLink href="/about/project" to="/about/project">
+                Project
+              </InnerLink>
+              <InnerLink href="/about/creators" to="/about/creators">
                 Creators
+              </InnerLink>
+              <InnerLink href="/about/history" to="/about/history">
+                History
               </InnerLink>
             </Dropdown>
           </Link>
           <Link href="/people" to="/people">
             Profiles
-            <Dropdown id="drop2">ITEM</Dropdown>
           </Link>
           <Link href="/archives" to="/archives">
             Archive
-            <Dropdown id="drop3">ITEM</Dropdown>
           </Link>
           <Link href="/partners" to="/partners">
             Partners
-            <Dropdown id="drop3">ITEM</Dropdown>
+            <Dropdown>
+              <InnerLink
+                href="/partners/organizations"
+                to="/partners/organizations"
+              >
+                Organizations
+              </InnerLink>
+              <InnerLink
+                href="/partners/contributors"
+                to="/partners/contributors"
+              >
+                Contributors
+              </InnerLink>
+              <InnerLink href="/partners/media" to="/partners/media">
+                Media
+              </InnerLink>
+            </Dropdown>
           </Link>
           <Link href="/volunteer" to="/volunteer">
             Get Involved
-            <Dropdown id="drop3">ITEM</Dropdown>
           </Link>
         </LinkContainer>
         <Header>About the Creators</Header>

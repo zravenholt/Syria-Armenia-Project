@@ -1,20 +1,19 @@
 import styled from 'styled-components';
 
-const Gif = styled.img`
-  position: absolute;
-  width: 25%;
+const Link = styled.a`
+  position: relative;
+  color: white;
   margin-top: 10px;
-  left: 0px;
-  top: -30px;
-  color: #8c0000;
+  padding-right: 50px;
   text-decoration: none;
   text-align: center;
   font-size: 30px;
   font-family: serif;
   z-index: 2;
+  float: right;
   &:hover {
-    color: white;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 1);
   }
 `;
 
-export default Gif;
+export default Link;
