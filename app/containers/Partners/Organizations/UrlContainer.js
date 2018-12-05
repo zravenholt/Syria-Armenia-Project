@@ -8,7 +8,7 @@ const Url = styled.a`
   width: 100%;
   color: black;
   text-align: center;
-  font-size: 15px;
+  font-size: 20px;
   font-family: Georgia;
   z-index: 1;
 `;

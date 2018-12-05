@@ -77,7 +77,7 @@ export default class HomePage extends React.PureComponent {
             <Link href="/archives" to="/archives">
               Archive
             </Link>
-            <Link href="/partners" to="/partners">
+            <Link href="/partners/organizations" to="/partners/organizations">
               Partners
               <Dropdown>
                 <InnerLink
@@ -115,22 +115,22 @@ export default class HomePage extends React.PureComponent {
                 </UrlContainer>
               </Partner>
               <Partner>
-                <PartnerName>Mission Armenia</PartnerName>
-                <ImageWrapper>
-                  <div style={imageHelper}> </div>
-                  <PartnerImage src={mission} />
-                </ImageWrapper>
-                <UrlContainer href="http://www.mission.am/NEW/index.php">
-                  Visit their site
-                </UrlContainer>
-              </Partner>
-              <Partner>
                 <PartnerName>Aleppo NGO</PartnerName>
                 <ImageWrapper>
                   <div style={imageHelper}> </div>
                   <PartnerImage src={aleppo} />
                 </ImageWrapper>
                 <UrlContainer href="https://aleppo-ngo.org/">
+                  Visit their site
+                </UrlContainer>
+              </Partner>
+              <Partner>
+                <PartnerName>Mission Armenia</PartnerName>
+                <ImageWrapper>
+                  <div style={imageHelper}> </div>
+                  <PartnerImage src={mission} />
+                </ImageWrapper>
+                <UrlContainer href="http://www.mission.am/NEW/index.php">
                   Visit their site
                 </UrlContainer>
               </Partner>

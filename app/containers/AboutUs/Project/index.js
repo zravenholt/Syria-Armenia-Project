@@ -92,9 +92,25 @@ export default class Creators extends React.PureComponent {
           <Link href="/archives" to="/archives">
             Archive
           </Link>
-          <Link href="/partners" to="/partners">
+          <Link href="/partners/organizations" to="/partners/organizations">
             Partners
-            <Dropdown id="drop3">ITEM</Dropdown>
+            <Dropdown>
+              <InnerLink
+                href="/partners/organizations"
+                to="/partners/organizations"
+              >
+                Organizations
+              </InnerLink>
+              <InnerLink
+                href="/partners/contributors"
+                to="/partners/contributors"
+              >
+                Contributors
+              </InnerLink>
+              <InnerLink href="/partners/media" to="/partners/media">
+                Media
+              </InnerLink>
+            </Dropdown>
           </Link>
           <Link href="/volunteer" to="/volunteer">
             Get Involved

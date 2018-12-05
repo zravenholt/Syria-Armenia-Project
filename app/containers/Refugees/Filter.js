@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 const Filter = styled.div`
   background-color: #f3f3f3;
-  height: 250px;
-  width: 69%;
+  height: 80px;
+  width: 50%;
   margin: auto;
   text-decoration: none;
   text-align: center;

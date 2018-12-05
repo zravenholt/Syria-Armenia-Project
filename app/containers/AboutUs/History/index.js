@@ -124,7 +124,7 @@ export default class History extends React.PureComponent {
           <Link href="/archives" to="/archives">
             Archive
           </Link>
-          <Link href="/partners" to="/partners">
+          <Link href="/partners/organizations" to="/partners/organizations">
             Partners
             <Dropdown>
               <InnerLink

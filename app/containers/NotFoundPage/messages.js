@@ -8,6 +8,7 @@ import { defineMessages } from 'react-intl';
 export default defineMessages({
   header: {
     id: 'app.components.NotFoundPage.header',
-    defaultMessage: 'This is NotFoundPage component!',
+    defaultMessage:
+      'Oops! The website is still in active development and this page is under construction. Please go back.',
   },
 });

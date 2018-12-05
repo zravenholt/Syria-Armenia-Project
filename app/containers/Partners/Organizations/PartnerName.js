@@ -7,7 +7,7 @@ const SmallName = styled.div`
   width: 100%;
   color: #8c0000;
   text-align: center;
-  font-size: 40px;
+  font-size: 30px;
   font-family: Georgia;
   z-index: 1;
 `;

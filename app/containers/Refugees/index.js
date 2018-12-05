@@ -15,13 +15,13 @@ import SearchContainer from './SearchContainer';
 import Tile from './Tile';
 import TileRow from './TileRow';
 import CircleProfile from './CircleProfile';
-import FilterItemsContainer from './FilterItemsContainer';
+// import FilterItemsContainer from './FilterItemsContainer';
 import Modal from './Modal';
 import LinkContainer from './LinkContainer';
 import Filter from './Filter';
-import FilterTitle from './FilterTitle';
-import FilterCategory from './FilterCategory';
-import FilterOption from './FilterOption';
+// import FilterTitle from './FilterTitle';
+// import FilterCategory from './FilterCategory';
+// import FilterOption from './FilterOption';
 // import ProfileImage from './ProfileImage';
 
 import Profiles from './Profiles';
@@ -191,29 +191,48 @@ export default class Refugees extends React.PureComponent {
             <HomeLink href="/" to="/">
               ReRooted
             </HomeLink>
-            <Link href="/about" to="/about">
+            <Link href="/about/project" to="/about/project">
               About
-              <Dropdown id="drop1">
-                <InnerLink href="/about/creators" to="/about">
+              <Dropdown>
+                <InnerLink href="/about/project" to="/about/project">
+                  Project
+                </InnerLink>
+                <InnerLink href="/about/creators" to="/about/creators">
                   Creators
+                </InnerLink>
+                <InnerLink href="/about/history" to="/about/history">
+                  History
                 </InnerLink>
               </Dropdown>
             </Link>
             <Link href="/people" to="/people">
               Profiles
-              <Dropdown id="drop2">ITEM</Dropdown>
             </Link>
             <Link href="/archives" to="/archives">
               Archive
-              <Dropdown id="drop3">ITEM</Dropdown>
             </Link>
-            <Link href="/partners" to="/partners">
+            <Link href="/partners/organizations" to="/partners/organizations">
               Partners
-              <Dropdown id="drop3">ITEM</Dropdown>
+              <Dropdown>
+                <InnerLink
+                  href="/partners/organizations"
+                  to="/partners/organizations"
+                >
+                  Organizations
+                </InnerLink>
+                <InnerLink
+                  href="/partners/contributors"
+                  to="/partners/contributors"
+                >
+                  Contributors
+                </InnerLink>
+                <InnerLink href="/partners/media" to="/partners/media">
+                  Media
+                </InnerLink>
+              </Dropdown>
             </Link>
             <Link href="/volunteer" to="/volunteer">
               Get Involved
-              <Dropdown id="drop3">ITEM</Dropdown>
             </Link>
           </LinkContainer>
           <Header>
@@ -224,7 +243,7 @@ export default class Refugees extends React.PureComponent {
               Search:
               <Search id="searchField" onKeyUp={this.searchProfiles} />
             </SearchContainer>
-            <FilterItemsContainer>
+            {/* <FilterItemsContainer>
               <FilterTitle>Filters</FilterTitle>
               <FilterCategory>
                 Age:
@@ -251,7 +270,7 @@ export default class Refugees extends React.PureComponent {
                 <FilterOption>Syria</FilterOption>
                 <FilterOption>Armenia</FilterOption>
               </FilterCategory>
-            </FilterItemsContainer>
+            </FilterItemsContainer> */}
           </Filter>
           {this.createRows()}
         </div>
