@@ -17,11 +17,13 @@ import { Switch, Route } from 'react-router-dom';
 import HomePage from 'containers/HomePage/Loadable';
 import Refugees from 'containers/Refugees/Loadable';
 import Archives from 'containers/Archives/Loadable';
+import Involved from 'containers/Involved/Loadable';
 import Creators from 'containers/AboutUs/Creators/Loadable';
 import Project from 'containers/AboutUs/Project/Loadable';
 import History from 'containers/AboutUs/History/Loadable';
 import Organizations from 'containers/Partners/Organizations/Loadable';
 import Contributors from 'containers/Partners/Contributors/Loadable';
+import Media from 'containers/Partners/Media/Loadable';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
 
 const Style = {
@@ -35,8 +37,10 @@ export default function App() {
         <Route exact path="/" component={HomePage} />
         <Route exact path="/people" component={Refugees} />
         <Route exact path="/archives" component={Archives} />
+        <Route exact path="/volunteer" component={Involved} />
         <Route exact path="/partners/organizations" component={Organizations} />
         <Route exact path="/partners/contributors" component={Contributors} />
+        <Route exact path="/partners/media" component={Media} />
         <Route exact path="/about/creators" component={Creators} />
         <Route exact path="/about/project" component={Project} />
         <Route exact path="/about/history" component={History} />
