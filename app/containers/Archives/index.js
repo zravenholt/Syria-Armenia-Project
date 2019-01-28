@@ -32,6 +32,11 @@ import Modal from './Modal';
 // import Background from './Background';
 import LinkContainer from './LinkContainer';
 
+const ulHelper = {
+  listStyle: 'none',
+  paddingLeft: '0',
+};
+
 /* eslint-disable react/prefer-stateless-function */
 export default class Archives extends React.PureComponent {
   constructor(props) {
@@ -247,7 +252,7 @@ export default class Archives extends React.PureComponent {
             <FormattedMessage {...messages.header} />
           </Header>
           <ListWrapper>
-            <ul>
+            <ul style={ulHelper}>
               {this.state.VideoList.map((vidObj, index) => {
                 const val = index + 1;
                 return (
@@ -257,7 +262,10 @@ export default class Archives extends React.PureComponent {
                       this.toggleModal(vidObj, index);
                     }}
                   >
-                    {vidObj.name} - {vidObj.location} - {vidObj.date}
+                    <div>Testimony of:</div>
+                    <div>
+                      <b>{vidObj.name}</b>
+                    </div>
                   </VideoTitle>
                 );
               })}

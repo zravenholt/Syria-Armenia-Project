@@ -5,6 +5,7 @@ const Paragraph = styled.div`
   width: 100%;
   z-index: 1;
   border-radius: 5px;
+  margin-bottom: 25px;
   font-size: 20px;
   text-align: center;
 `;

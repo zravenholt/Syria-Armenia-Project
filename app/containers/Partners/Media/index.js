@@ -108,7 +108,7 @@ export default class Media extends React.PureComponent {
           <TitleWrapper>
             <PartnerName>English Language Press / Publications</PartnerName>
             <Partners>
-              <Partner>
+              <Partner href="https://aleppo-ngo.org/rerooted-largest-syrian-armenian-testimony-archive-presented-in-armenia/">
                 <ImageWrapper>
                   <div style={imageHelper}> </div>
                   <PartnerImage src={EP1} />
@@ -118,7 +118,7 @@ export default class Media extends React.PureComponent {
                   Presented in Armenia,” July 30, 2018.
                 </SmallName>
               </Partner>
-              <Partner>
+              <Partner href="https://www.cmc.edu/news/project-for-peace-and-power-of-preserving-refugees%E2%80%99-stories">
                 <ImageWrapper>
                   <div style={imageHelper}> </div>
                   <PartnerImage src={EP2} />
@@ -128,7 +128,7 @@ export default class Media extends React.PureComponent {
                   stories,” February 2, 2018.
                 </SmallName>
               </Partner>
-              <Partner>
+              <Partner href="https://www.ideasandian.com/makerswall/rerooted">
                 <ImageWrapper>
                   <div style={imageHelper}> </div>
                   <PartnerImage src={EP3} />
@@ -138,7 +138,7 @@ export default class Media extends React.PureComponent {
                   August 9, 2018.
                 </SmallName>
               </Partner>
-              <Partner>
+              <Partner href="https://www.cambridge.org/core/journals/review-of-middle-east-studies">
                 <ImageWrapper>
                   <div style={imageHelper}> </div>
                   <PartnerImage src={EP4} />
@@ -151,7 +151,7 @@ export default class Media extends React.PureComponent {
             </Partners>
             <PartnerName>Armenian Language Press</PartnerName>
             <Partners>
-              <Partner>
+              <Partner href="https://bit.ly/2wy55FU">
                 <ImageWrapper>
                   <div style={imageHelper}> </div>
                   <PartnerImage src={AP1} />
@@ -161,7 +161,7 @@ export default class Media extends React.PureComponent {
                   31, 2018.
                 </SmallName>
               </Partner>
-              <Partner>
+              <Partner href="https://aleppo-ngo.org/hy/rerooted-largest-syrian-armenian-testimony-archive-presented-in-armenia/">
                 <ImageWrapper>
                   <div style={imageHelper}> </div>
                   <PartnerImage src={AP2} />
@@ -174,7 +174,7 @@ export default class Media extends React.PureComponent {
             </Partners>
             <PartnerName>Presentations</PartnerName>
             <Partners>
-              <Partner>
+              <Partner href="http://www.pilgrimplace.org/">
                 <ImageWrapper>
                   <div style={imageHelper}> </div>
                   <PartnerImage src={P1} />
@@ -184,7 +184,7 @@ export default class Media extends React.PureComponent {
                   peace, February 2018.
                 </SmallName>
               </Partner>
-              <Partner>
+              <Partner href="https://www.youtube.com/watch?v=FqjWMhMP2J8">
                 <ImageWrapper>
                   <div style={imageHelper}> </div>
                   <PartnerImage src={P2} />
@@ -193,7 +193,7 @@ export default class Media extends React.PureComponent {
                   Marian Miner Cook, Athenaeum, February 2018.
                 </SmallName>
               </Partner>
-              <Partner>
+              <Partner href="https://www.agbumhs.org/hs/about/mission.jsp">
                 <ImageWrapper>
                   <div style={imageHelper}> </div>
                   <PartnerImage src={P3} />
@@ -203,7 +203,7 @@ export default class Media extends React.PureComponent {
                   High School, October 2018.
                 </SmallName>
               </Partner>
-              <Partner>
+              <Partner href="https://www.mskh.am/en">
                 <ImageWrapper>
                   <div style={imageHelper}> </div>
                   <PartnerImage src={P4} />

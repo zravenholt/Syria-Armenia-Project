@@ -153,7 +153,21 @@ export default class Involved extends React.PureComponent {
               <TextWrapper>
                 Please send your correspondence to
                 <b>&nbsp;rerooted.archive@gmail.com</b>
+                &nbsp;or Sign up below to receive updates from ReRooted.
               </TextWrapper>
+            </Paragraph>
+            <Paragraph>
+              <iframe
+                title="googleForm"
+                src="https://docs.google.com/forms/d/e/1FAIpQLSfBYqSrOvTpHk4xUtjPBYk4pz7j_ZP1YgEJfjoTkizZ5oBkMQ/viewform?embedded=true"
+                width="640"
+                height="666"
+                frameBorder="0"
+                marginHeight="0"
+                marginWidth="0"
+              >
+                Loading...
+              </iframe>
             </Paragraph>
           </TitleWrapper>
         </div>
