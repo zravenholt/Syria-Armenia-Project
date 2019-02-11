@@ -6,6 +6,7 @@ const LinkContainer = styled.div`
   justify-content: flex-end;
   width: 100%;
   background-color: #8c0000;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 `;
 
 export default LinkContainer;

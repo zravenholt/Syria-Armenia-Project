@@ -9,7 +9,7 @@ const InterpreterName = styled.div`
   color: black;
   text-align: center;
   font-size: 25px;
-  font-family: Georgia;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   z-index: 1;
 `;
 

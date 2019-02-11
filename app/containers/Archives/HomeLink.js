@@ -9,7 +9,6 @@ const HomeLink = styled.a`
   text-decoration: none;
   text-align: center;
   font-size: 40px;
-  font-family: Ubuntu;
   z-index: 2;
   float: right;
   &:hover {

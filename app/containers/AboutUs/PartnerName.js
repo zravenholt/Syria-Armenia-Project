@@ -9,7 +9,7 @@ const SmallName = styled.div`
   color: black;
   text-align: center;
   font-size: 20px;
-  font-family: Georgia;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   z-index: 1;
 `;
 

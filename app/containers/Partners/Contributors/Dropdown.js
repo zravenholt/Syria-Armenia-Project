@@ -10,8 +10,8 @@ const Dropdown = styled.a`
   text-decoration: none;
   text-align: center;
   font-size: 30px;
-  font-family: serif;
-  z-index: 2;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  sz-index: 2;
   border-radius: 5px;
   visibility: hidden;
   opacity: 0;

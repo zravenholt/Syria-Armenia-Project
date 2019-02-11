@@ -8,7 +8,7 @@ const Location = styled.div`
   width: 100%;
   color: black;
   font-size: 30px;
-  font-family: Times New Roman;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   z-index: 1;
 `;
 

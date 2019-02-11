@@ -8,7 +8,7 @@ const Bio = styled.div`
   width: 100%;
   color: black;
   font-size: 22px;
-  font-family: Times New Roman;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   z-index: 1;
 `;
 

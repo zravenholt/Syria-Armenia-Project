@@ -5,7 +5,7 @@ const TextWrapper = styled.div`
   margin: auto;
   width: 80%;
   font-size: 20px;
-  font-family: Georgia;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   z-index: 3;
 `;
 

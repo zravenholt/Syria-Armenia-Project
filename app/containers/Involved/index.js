@@ -153,7 +153,7 @@ export default class Involved extends React.PureComponent {
               <TextWrapper>
                 Please send your correspondence to
                 <b>&nbsp;rerooted.archive@gmail.com</b>
-                &nbsp;or Sign up below to receive updates from ReRooted.
+                &nbsp;or sign up below to receive updates from ReRooted.
               </TextWrapper>
             </Paragraph>
             <Paragraph>

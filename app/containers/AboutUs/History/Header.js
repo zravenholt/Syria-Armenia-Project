@@ -9,7 +9,7 @@ const Header = styled.div`
   color: black;
   text-align: center;
   font-size: 60px;
-  font-family: serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   z-index: 1;
 `;
 

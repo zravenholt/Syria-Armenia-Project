@@ -9,7 +9,7 @@ const Title = styled.div`
   color: white;
   text-align: center;
   font-size: 120px;
-  font-family: cursive;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-shadow: 5px 5px 15px rgba(150, 150, 150, 1);
   z-index: 1;
 `;

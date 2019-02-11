@@ -10,7 +10,7 @@ const Name = styled.div`
   color: black;
   text-align: center;
   font-size: 45px;
-  font-family: Georgia;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   z-index: 1;
 `;
 

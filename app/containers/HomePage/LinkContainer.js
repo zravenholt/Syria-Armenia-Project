@@ -6,6 +6,7 @@ const LinkContainer = styled.div`
   justify-content: flex-end;
   width: 100%;
   background-color: black;
+  z-index: 2;
 `;
 
 export default LinkContainer;

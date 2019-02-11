@@ -8,7 +8,7 @@ const Link = styled.a`
   text-decoration: none;
   text-align: center;
   font-size: 30px;
-  font-family: serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   z-index: 2;
   float: right;
   &:hover {

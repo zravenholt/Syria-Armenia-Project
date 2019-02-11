@@ -8,7 +8,7 @@ const SmallName = styled.div`
   color: #8c0000;
   text-align: center;
   font-size: 30px;
-  font-family: Georgia;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   z-index: 1;
 `;
 

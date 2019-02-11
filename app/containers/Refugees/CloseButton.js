@@ -6,7 +6,7 @@ const CloseButton = styled.div`
   margin-right: 10px;
   margin-top: 5px;
   font-size: 25px;
-  font-family: Helvetica;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   z-index: 3;
   &:hover {
     color: black;

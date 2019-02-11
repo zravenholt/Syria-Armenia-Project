@@ -7,7 +7,7 @@ const SmallLocation = styled.div`
   width: 100%;
   color: black;
   font-size: 20px;
-  font-family: Times New Roman;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   z-index: 1;
 `;
 

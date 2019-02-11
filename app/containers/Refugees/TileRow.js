@@ -12,7 +12,7 @@ const TileRow = styled.div`
   text-decoration: none;
   text-align: center;
   font-size: 30px;
-  font-family: serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   border-radius: 10px;
   z-index: 2;
   &:hover {

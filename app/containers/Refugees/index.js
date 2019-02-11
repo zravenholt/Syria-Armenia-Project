@@ -34,11 +34,9 @@ export default class Refugees extends React.PureComponent {
       selectedPeople: null,
       people: Profiles,
       isOpen: false,
-      activeFilters: [],
     };
 
     this.handleClick = this.handleClick.bind(this);
-    this.toggleFilters = this.toggleFilters.bind(this);
   }
 
   handleClick = data => {
@@ -111,30 +109,10 @@ export default class Refugees extends React.PureComponent {
         if (l === total) {
           return true;
         }
-        return false;
       }
     }
-    return null; // arrow function asks that something be returned.
+    return false; // arrow function asks that something be returned.
   };
-
-  matchFilters(element) {
-    // this refers to filter in parent function that calls matchFilters
-    return element === this;
-  }
-
-  toggleFilters(filter) {
-    console.log(filter);
-    const filterLoc = this.state.activeFilters.findIndex(
-      this.matchFilters,
-      filter,
-    );
-    if (filterLoc < 0) {
-      this.state.activeFilters.push(filter);
-      console.log(this.state.activeFilters);
-    } else {
-      console.log(this.state.activeFilters);
-    }
-  }
 
   searchProfiles = e => {
     let found = 0;
@@ -143,8 +121,6 @@ export default class Refugees extends React.PureComponent {
       return null;
     } else if (e.key === 'Enter') {
       const hits = [];
-      console.log('search triggered');
-      console.log(e.target.value);
       for (let i = 0; i < this.state.people.length; i += 1) {
         found = 0;
         const v = Object.values(this.state.people[i]);
@@ -157,7 +133,6 @@ export default class Refugees extends React.PureComponent {
               )
             ) {
               found += 1;
-              console.log(found);
             }
           }
         }
@@ -169,9 +144,6 @@ export default class Refugees extends React.PureComponent {
     }
     return null;
   };
-
-  // create row with 4 tiles
-  //
 
   render() {
     return (
@@ -243,34 +215,6 @@ export default class Refugees extends React.PureComponent {
               Search:
               <Search id="searchField" onKeyUp={this.searchProfiles} />
             </SearchContainer>
-            {/* <FilterItemsContainer>
-              <FilterTitle>Filters</FilterTitle>
-              <FilterCategory>
-                Age:
-                <FilterOption
-                  onClick={() => {
-                    this.toggleFilters(18);
-                  }}
-                >
-                  18 - 25
-                </FilterOption>
-                <FilterOption>26 - 40</FilterOption>
-                <FilterOption>41 - 60</FilterOption>
-                <FilterOption>60+</FilterOption>
-              </FilterCategory>
-              <FilterCategory>
-                Location:
-                <FilterOption>Aleppo</FilterOption>
-                <FilterOption>Yerevan</FilterOption>
-                <FilterOption>Beirut</FilterOption>
-              </FilterCategory>
-              <FilterCategory>
-                Birthplace:
-                <FilterOption>Kuwait</FilterOption>
-                <FilterOption>Syria</FilterOption>
-                <FilterOption>Armenia</FilterOption>
-              </FilterCategory>
-            </FilterItemsContainer> */}
           </Filter>
           {this.createRows()}
         </div>

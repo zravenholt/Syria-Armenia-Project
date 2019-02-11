@@ -9,7 +9,7 @@ const BigName = styled.div`
   color: black;
   text-align: center;
   font-size: 40px;
-  font-family: Georgia;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   z-index: 1;
 `;
 
