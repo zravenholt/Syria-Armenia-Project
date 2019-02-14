@@ -7,6 +7,8 @@ const Location = styled.div`
   width: 100%;
   color: black;
   z-index: 1;
+  padding-bottom: 15px;
+  padding-left: 50px;
 `;
 
 export default Location;

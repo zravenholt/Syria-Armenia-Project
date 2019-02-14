@@ -110,7 +110,10 @@ export default class HomePage extends React.PureComponent {
                   <div style={imageHelper}> </div>
                   <PartnerImage src={unhcr} />
                 </ImageWrapper>
-                <UrlContainer href="http://www.unhcr.org/armenia.html">
+                <UrlContainer
+                  href="http://www.unhcr.org/armenia.html"
+                  target="_blank"
+                >
                   Visit their site
                 </UrlContainer>
               </Partner>
@@ -120,7 +123,7 @@ export default class HomePage extends React.PureComponent {
                   <div style={imageHelper}> </div>
                   <PartnerImage src={aleppo} />
                 </ImageWrapper>
-                <UrlContainer href="https://aleppo-ngo.org/">
+                <UrlContainer href="https://aleppo-ngo.org/" target="_blank">
                   Visit their site
                 </UrlContainer>
               </Partner>
@@ -130,7 +133,10 @@ export default class HomePage extends React.PureComponent {
                   <div style={imageHelper}> </div>
                   <PartnerImage src={mission} />
                 </ImageWrapper>
-                <UrlContainer href="http://www.mission.am/NEW/index.php">
+                <UrlContainer
+                  href="http://www.mission.am/NEW/index.php"
+                  target="_blank"
+                >
                   Visit their site
                 </UrlContainer>
               </Partner>
@@ -142,7 +148,10 @@ export default class HomePage extends React.PureComponent {
                   <div style={imageHelper}> </div>
                   <PartnerImage src={peace} />
                 </ImageWrapper>
-                <UrlContainer href="http://www.davisprojectsforpeace.org/">
+                <UrlContainer
+                  href="http://www.davisprojectsforpeace.org/"
+                  target="_blank"
+                >
                   Visit their site
                 </UrlContainer>
               </Partner>
@@ -152,7 +161,10 @@ export default class HomePage extends React.PureComponent {
                   <div style={imageHelper}> </div>
                   <PartnerImage src={pomegranate} />
                 </ImageWrapper>
-                <UrlContainer href="http://pomegranatefoundation.org/">
+                <UrlContainer
+                  href="http://pomegranatefoundation.org/"
+                  target="_blank"
+                >
                   Visit their site
                 </UrlContainer>
               </Partner>
@@ -162,7 +174,10 @@ export default class HomePage extends React.PureComponent {
                   <div style={imageHelper}> </div>
                   <PartnerImage src={tufenkian} />
                 </ImageWrapper>
-                <UrlContainer href="http://www.tufenkianfoundation.org/">
+                <UrlContainer
+                  href="http://www.tufenkianfoundation.org/"
+                  target="_blank"
+                >
                   Visit their site
                 </UrlContainer>
               </Partner>
@@ -174,7 +189,10 @@ export default class HomePage extends React.PureComponent {
                   <div style={imageHelper}> </div>
                   <PartnerImage src={groundswell} />
                 </ImageWrapper>
-                <UrlContainer href="http://www.oralhistoryforsocialchange.org/">
+                <UrlContainer
+                  href="http://www.oralhistoryforsocialchange.org/"
+                  target="_blank"
+                >
                   Visit their site
                 </UrlContainer>
               </Partner>
@@ -184,7 +202,7 @@ export default class HomePage extends React.PureComponent {
                   <div style={imageHelper}> </div>
                   <PartnerImage src={idea} />
                 </ImageWrapper>
-                <UrlContainer href="https://www.idea.am">
+                <UrlContainer href="https://www.idea.am" target="_blank">
                   Visit their site
                 </UrlContainer>
               </Partner>
@@ -194,7 +212,10 @@ export default class HomePage extends React.PureComponent {
                   <div style={imageHelper}> </div>
                   <PartnerImage src={missionEast} />
                 </ImageWrapper>
-                <UrlContainer href="http://www.miseast.org/en/armenia/home">
+                <UrlContainer
+                  href="http://www.miseast.org/en/armenia/home"
+                  target="_blank"
+                >
                   Visit their site
                 </UrlContainer>
               </Partner>

@@ -12,8 +12,10 @@ import PropTypes from 'prop-types';
 import ModalWrapper from './ModalWrapper';
 import ModalContainer from './ModalContainer';
 import VideoContainer from './VideoContainer';
-import TextWrapper from './TextWrapper';
+import LeftTextWrapper from './LeftTextWrapper';
+import RightTextWrapper from './RightTextWrapper';
 import Name from './Name';
+import Blurb from './Blurb';
 import Date from './Date';
 import Location from './Location';
 import Interviewer from './Interviewer';
@@ -31,20 +33,50 @@ class Modal extends React.PureComponent {
         <ModalWrapper>
           <ModalContainer>
             <CloseButton onClick={this.props.onClose}>X</CloseButton>
-            <TextWrapper>
-              <Name>Interview of {this.props.video.name}</Name>
-              <Location>Location: {this.props.video.location}</Location>
-              <Date>Date: {this.props.video.date}</Date>
+            <Name>
+              <b>{this.props.video.name}</b>
+            </Name>
+            <Blurb>
+              <i>{this.props.video.blurb}</i>
+            </Blurb>
+            <LeftTextWrapper>
+              <Location>
+                <b>Age:</b> {this.props.video.age}
+              </Location>
+              <Location>
+                <b>Gender:</b> {this.props.video.gender}
+              </Location>
+              <Location>
+                <b>Hometown:</b> {this.props.video.birthplace}
+              </Location>
+              <Location>
+                <b>Place of Residence:</b> {this.props.video.cityOfResidence}
+              </Location>
+              <Location>
+                <b>Ancestral City:</b> {this.props.video.ancestralCity}
+              </Location>
+              <Location>
+                <a href={this.props.video.englishPDF} target="_blank">
+                  English PDF of transcript
+                </a>
+              </Location>
+            </LeftTextWrapper>
+            <RightTextWrapper>
+              <Date>
+                <b>Date:</b> {this.props.video.date}
+              </Date>
               <Interviewer>
-                Interviewer: {this.props.video.interviewer}
+                <b>Interviewer:</b> {this.props.video.interviewer}
               </Interviewer>
-              <Translator>Translator: {this.props.video.translator}</Translator>
-            </TextWrapper>
-            <VideoContainer
-              src={this.props.video.url}
-              allowFullScreen="true"
-              controls
-            />
+              <Translator>
+                <b>Translator:</b> {this.props.video.translator}
+              </Translator>
+              <VideoContainer
+                src={this.props.video.url}
+                allowFullScreen="true"
+                controls
+              />
+            </RightTextWrapper>
           </ModalContainer>
         </ModalWrapper>
       </div>

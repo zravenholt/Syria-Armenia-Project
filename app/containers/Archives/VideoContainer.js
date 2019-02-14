@@ -6,7 +6,7 @@ const VideoContainer = styled.iframe`
   display: block;
   margin: auto;
   title: cats;
-  width: 80%;
+  width: 90%;
   height: 400px;
   frameborder: 0px;
   margin-top: 25px;
