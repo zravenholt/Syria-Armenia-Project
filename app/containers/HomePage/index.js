@@ -43,6 +43,7 @@ const backgroundStyles = {
 /* eslint-disable react/prefer-stateless-function */
 export default class HomePage extends React.PureComponent {
   render() {
+    console.log('Homepage Rendered');
     return (
       <div style={backgroundStyles}>
         <div>

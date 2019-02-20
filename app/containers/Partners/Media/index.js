@@ -163,7 +163,10 @@ export default class Media extends React.PureComponent {
             </Partners>
             <PartnerName>Armenian Language Press</PartnerName>
             <Partners>
-              <Partner href="https://bit.ly/2wy55FU" target="_blank">
+              <Partner
+                href="https://www.cambridge.org/core/journals/review-of-middle-east-studies/article/documenting-100-years-of-displacement-among-syrianarmenians-an-interview-with-anoush-baghdassarian-conducted-by-lauren-broidy/B37DF34F253F61FB6B4722CB6ADE7A9E/share/8c47b3b07a1ad757c56b928f41ff749fbb64a150?fbclid=IwAR0vqwD8KJzircKQM0xmB7qsJ1SU5mq9kPmGz32KKGK-WrJc5hFNbak_qZY"
+                target="_blank"
+              >
                 <ImageWrapper>
                   <div style={imageHelper}> </div>
                   <PartnerImage src={AP1} />
