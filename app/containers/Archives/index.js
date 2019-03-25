@@ -33,6 +33,10 @@ import SearchContainer from './SearchContainer';
 // import Background from './Background';
 import LinkContainer from './LinkContainer';
 
+import Paragraph from './Creator';
+import ParagraphWrapper from './Creators';
+import TextWrapper from './TextWrapper';
+
 const ulHelper = {
   listStyle: 'none',
   paddingLeft: '0',
@@ -46,6 +50,12 @@ export default class Archives extends React.PureComponent {
       isOpen: false,
       selectedVideo: null,
       selectedVideos: null,
+      Project: {
+        blurb10:
+          'Thank you for visiting our site. Our public archive is still in the middle of development, however we have made it public so you can access the available interviews as early as possible. Please continue visiting our page for our frequent updates. We will keep posting more of our over 100 interviews, and plan to have the interviews available in English and Western Armenian, as well as transcripts available for each. There will also be more search functions, an interactive map feature, and lesson-plan material.',
+        blurb11:
+          'Our interviews of a community twice displaced in 100 years have so much to share with a wide audience in our current political climate--whether about refugee integration policy, sectarian relations in the Middle East, or the effects of displacement on minority communities. We will be exploring these messages through many mediums as we progress. We encourage you to stay in touch with Rerooted with your questions, suggestions, or simply sharing with us how you are utilizing this archive.',
+      },
       VideoList: [
         {
           videoName: 'Video of Angel Ajemian',
@@ -450,6 +460,12 @@ export default class Archives extends React.PureComponent {
             </Link>
           </LinkContainer>
           <Header>Video Archives</Header>
+          <ParagraphWrapper>
+            <Paragraph>
+              <TextWrapper>{this.state.Project.blurb10}</TextWrapper>
+              <TextWrapper>{this.state.Project.blurb11}</TextWrapper>
+            </Paragraph>
+          </ParagraphWrapper>
           <Filter>
             <SearchContainer>
               Search:

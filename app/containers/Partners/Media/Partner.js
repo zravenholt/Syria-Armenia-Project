@@ -13,6 +13,7 @@ const Partner = styled.a`
   border-radius: 4px;
   height: 400px;
   text-decoration: none;
+  text-overflow: clip;
   &:hover {
     -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.5);

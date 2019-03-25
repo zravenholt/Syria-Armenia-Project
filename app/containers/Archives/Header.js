@@ -5,7 +5,6 @@ const Header = styled.div`
   display: block;
   margin: auto;
   padding-top: 5%;
-  margin-bottom: 5%;
   width: 100%;
   color: black;
   text-align: center;
